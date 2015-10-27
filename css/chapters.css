@@ -1,0 +1,9 @@
+#chapters > .row > .col-md-7 > a > img {
+    width:100%;
+}
+
+#chapters > .row > .col-md-7 {
+    max-height:250px;
+    overflow:hidden;
+    vertical-align:middle;
+}

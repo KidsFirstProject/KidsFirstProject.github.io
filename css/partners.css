@@ -1,0 +1,6 @@
+#partners > .row > .col-md-7 > a > .img-responsive {
+    width:auto;
+    max-width:100%;
+    height:180px;
+    margin:0 auto;
+}

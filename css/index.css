@@ -1,0 +1,12 @@
+.panel > .panel-body {
+    background-color: #ffffff;
+}
+
+#follow-us > li > a > i {
+    color: #60CCCC;
+}
+
+#follow-us > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}

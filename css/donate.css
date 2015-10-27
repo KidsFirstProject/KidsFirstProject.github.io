@@ -1,0 +1,18 @@
+.fa-circle {
+    margin-top: 0.075em;
+    color: #85bb65
+}
+
+.fa-usd {
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 0.65em;
+}
+
+.usd3:after {
+    content: "\f155\f155\f155"; /* $$$ */
+    font-family: FontAwesome;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 0.65em;
+}

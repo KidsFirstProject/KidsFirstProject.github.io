@@ -1,0 +1,29 @@
+.thumbnail > img {
+    max-height:200px;
+}
+
+#directors > div > .thumbnail {
+    height: 560px;
+}
+
+#leaders > div > .thumbnail {
+    height: 510px;
+}
+
+#advisory > div > .thumbnail {
+    height: 560px;
+}
+
+#sponsors > div {
+    display: inline-block;
+    margin: auto;
+    float: none;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+#sponsors > div > img {
+    display: inline-block;
+    margin:auto;
+    float: none;
+}
