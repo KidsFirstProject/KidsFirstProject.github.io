@@ -10,3 +10,12 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* http://www.w3schools.com/css/css3_border_images.asp
+   Banner Border */
+.banner {
+    border: 20px solid transparent;
+    -webkit-border-image: url(../images/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../images/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../images/border.png) 30 round;
+}
