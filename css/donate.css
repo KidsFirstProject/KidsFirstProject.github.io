@@ -16,3 +16,12 @@
     text-shadow: 1px 1px 1px #ccc;
     font-size: 0.65em;
 }
+
+.panel {
+    border-radius: 15px;
+}
+
+.panel-heading {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
