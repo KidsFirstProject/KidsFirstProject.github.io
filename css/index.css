@@ -19,3 +19,13 @@
     -o-border-image: url(../images/border.png) 30 round; /* Opera 11-12.1 */
     border-image: url(../images/border.png) 30 round;
 }
+
+/* ---- particles.js container ---- */
+/*
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}*/
