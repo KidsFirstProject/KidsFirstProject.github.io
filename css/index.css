@@ -20,6 +20,16 @@
     border-image: url(../images/border.png) 30 round;
 }
 
+.body-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body-row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 /* ---- particles.js container ---- */
 /*
 #particles-js {
