@@ -30,12 +30,22 @@
     padding-bottom: 25px;
 }
 
-/* ---- particles.js container ---- */
-/*
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-}*/
+/* http://www.kirupa.com/html5/the_falling_snow_effect.htm */
+
+#snowflakeContainer {
+    display:none;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
