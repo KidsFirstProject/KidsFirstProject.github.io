@@ -4,7 +4,9 @@
  **/
 
 #snowflakeContainer {
-    display:none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 .snowflake {
@@ -13,7 +15,7 @@
     font-size: 14px;
     line-height: 24px;
     position: fixed;
-    color: #FFFFFF;
+    color: #60CCCC;
     user-select: none;
     z-index: 1000;
 }

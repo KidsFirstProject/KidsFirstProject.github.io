@@ -1,6 +1,6 @@
 // Only shows in december
 var d = new Date();
-if(d.getMonth() == 11) {
+if (d.getMonth() === 11) {
 
     // The star of every good animation
     var requestAnimationFrame = window.requestAnimationFrame || 

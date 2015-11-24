@@ -29,23 +29,3 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
-/* http://www.kirupa.com/html5/the_falling_snow_effect.htm */
-
-#snowflakeContainer {
-    display:none;
-}
-
-.snowflake {
-    padding-left: 15px;
-    font-family: Cambria, Georgia, serif;
-    font-size: 14px;
-    line-height: 24px;
-    position: fixed;
-    color: #FFFFFF;
-    user-select: none;
-    z-index: 1000;
-}
-.snowflake:hover {
-    cursor: default;
-}
