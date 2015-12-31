@@ -1,6 +1,5 @@
 .navbar {
-    min-height:50px !important;
-    border-bottom: 1px solid #888;
+    min-height:30px !important;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -27,43 +26,49 @@
 
 @media (min-width: 1200px) {
     .navbar-brand {
-        width: 120px;
         height: 120px;
+        position : absolute;
+        top: 0px;
     }
     
     .navbar-nav > li > a {
-        padding-top:51px !important;
-        padding-bottom:51px !important;
+        padding-top:16px !important;
+        padding-bottom:16px !important;
         font-size:18px;
     }
     
     #tagline-carousel {
-        padding-top: 70px;   
+        padding-top: 0px;   
     }
     
     .container.page-content {
-        padding-top: 70px;
+        padding-top: 45px;
     }
     
 }
 
 /* Adjust navbar colors */
 
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    background-color: transparent;
+}
+
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
     color: #60CCCC;
 }
 
-.navbar-nav > li.dropdown.open > a, 
-.navbar-nav > li.dropdown.open > a:hover,
-.navbar-nav > li.dropdown.open > a:focus {
+.navbar-inverse > li.dropdown.open > a, 
+.navbar-inverse > li.dropdown.open > a:hover,
+.navbar-inverse > li.dropdown.open > a:focus {
     color: #60CCCC;
     background-color: #fff;
 }
 
-.navbar-nav > .active > a,2
-.navbar-nav > .active > a:hover,
-.navbar-nav > .active > a:focus {
+.navbar-inverse > .active > a,
+.navbar-inverse > .active > a:hover,
+.navbar-inverse > .active > a:focus {
     color:#60CCCC !important;
     background-color: #FFF !important;
 }
