@@ -18,6 +18,7 @@
     -webkit-border-image: url(../images/border.png) 30 round; /* Safari 3.1-5 */
     -o-border-image: url(../images/border.png) 30 round; /* Opera 11-12.1 */
     border-image: url(../images/border.png) 30 round;
+    padding-top: 15px;
 }
 
 .body-header {
