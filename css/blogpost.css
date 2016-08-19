@@ -33,3 +33,13 @@
 ol li {
     font-size: 18px;
 }
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
