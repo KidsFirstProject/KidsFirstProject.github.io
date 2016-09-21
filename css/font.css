@@ -15,7 +15,7 @@ body {
 
 h1 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 36px;
+	font-size: 34px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 26px;
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 28px;
+	font-size: 26px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 26px;
@@ -31,7 +31,7 @@ h2 {
 
 h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 26px;
@@ -43,7 +43,7 @@ a, li {
 
 p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
+	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -52,7 +52,7 @@ p {
 
 blockquote {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
@@ -61,7 +61,7 @@ blockquote {
 
 pre {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
