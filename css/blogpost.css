@@ -3,7 +3,7 @@
 }
 
 #headerCarousel > .carousel-inner > .item {
-    max-height: 500px;
+    max-height: 700px;
     overflow: hidden;
     text-align: center;
 }
