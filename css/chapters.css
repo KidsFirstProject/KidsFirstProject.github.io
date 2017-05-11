@@ -7,3 +7,20 @@
     overflow:hidden;
     vertical-align:middle;
 }
+
+.carousel-inner .item{
+  width: 100%; /* Any width you want */
+  height: 500px; /* Any width you want */
+}
+.carousel-inner .item img{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.chapter-location {
+  float: right;
+}
+
+.state-chapter {
+  text-indent: 20px;
+}
