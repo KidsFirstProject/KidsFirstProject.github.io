@@ -49,6 +49,23 @@
 
 /* Adjust navbar colors */
 
+.navbar-inverse {
+    background-color: #bef;
+    border-color: #94e4ff;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #94e4ff;
+}
+
+.dropdown-menu {
+    background-color: #bef;
+}
+
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
     background-color: transparent;
