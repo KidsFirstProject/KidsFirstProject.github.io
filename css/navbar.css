@@ -50,8 +50,8 @@
 /* Adjust navbar colors */
 
 .navbar-inverse {
-    background-color: #bef;
-    border-color: #94e4ff;
+    background-color: #f5998b;
+    border-color: #f5998b;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -59,11 +59,11 @@
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #94e4ff;
+    background-color: #fff;
 }
 
 .dropdown-menu {
-    background-color: #bef;
+    background-color: #f5998b;
 }
 
 .navbar-inverse .navbar-brand:hover,
