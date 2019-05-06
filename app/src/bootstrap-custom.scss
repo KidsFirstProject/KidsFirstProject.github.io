@@ -1,0 +1,13 @@
+$theme-colors: (
+  "primary": #60CCCC,
+  "secondary": #F7998A
+);
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: #60CCCC;
+
+.btn-primary {
+  color: white !important;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';
