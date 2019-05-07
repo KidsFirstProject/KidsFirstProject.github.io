@@ -1,4 +1,4 @@
-import { importAll } from './util';
+import { importAll } from '../../../utils/imageImport';
 
 const images = importAll(require.context('../../../assets/images/members/leaders', false, /\.(png|jpe?g)$/));
 

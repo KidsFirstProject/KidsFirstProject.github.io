@@ -7,6 +7,7 @@ import HomePage from './components/home';
 import AboutPage from './components/about';
 import TeamPage from './components/team';
 import './bootstrap-custom.scss';
+import PartnersPage from './components/partners';
 
 const App = () => (
   <Router>
@@ -15,6 +16,8 @@ const App = () => (
       <Route exact path="/" component={HomePage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/team" component={TeamPage} />
+
+      <Route exact path="/partners" component={PartnersPage} />
       <Route component={NotFound} />
     </Switch>
     <KFPFooter />

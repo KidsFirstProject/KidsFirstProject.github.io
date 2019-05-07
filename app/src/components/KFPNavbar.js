@@ -35,6 +35,9 @@ const KFPNavbar = () => (
             <NavDropdown.Item>Advocacy</NavDropdown.Item>
           </LinkContainer>
         </NavDropdown>
+        <LinkContainer to="/partners">
+          <Nav.Link>Our Partners</Nav.Link>
+        </LinkContainer>
       </Nav>
     </Collapse>
     </Container>
