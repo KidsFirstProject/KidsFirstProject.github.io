@@ -1,6 +1,6 @@
-import { importAll } from '../../../utils/imageImport';
+import { importAll } from '../../utils/imageImport';
 
-const images = importAll(require.context('../../../assets/images/members/advisory', false, /\.(png|jpe?g)$/));
+const images = importAll(require.context('../../assets/images/members/advisory', false, /\.(png|jpe?g)$/));
 
 const advisors = [
   {

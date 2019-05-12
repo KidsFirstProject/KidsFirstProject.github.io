@@ -3,10 +3,10 @@ import { Container, Col, Row, Image, CardColumns, Card } from 'react-bootstrap';
 import MemberCard from './MemberCard';
 import styles from './TeamPage.module.css';
 import teamImage from '../../assets/images/chapters/portland-or/hfh06.jpg';
-import directors from './members/directors';
-import volunteerLeaders from './members/volunteer-leaders';
-import advisors from './members/advisors';
-import sponsors from './members/sponsors';
+import directors from '../../data/team/directors';
+import volunteerLeaders from '../../data/team/volunteer-leaders';
+import advisors from '../../data/team/advisors';
+import sponsors from '../../data/team/sponsors';
 
 const TeamPage = () => (
   <Container className="page-container">

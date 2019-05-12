@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import PartnerSection from './PartnerSection';
-import partnerList from './partnerList';
+import partnerList from '../../data/partners/partnerList';
 import styles from './PartnersPage.module.css';
 
 const PartnersPage = () => (
