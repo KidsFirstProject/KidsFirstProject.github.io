@@ -52,6 +52,12 @@ const KFPNavbar = () => (
         <LinkContainer to="/blog">
           <Nav.Link>Blog</Nav.Link>
         </LinkContainer>
+        <LinkContainer to="/donate">
+          <Nav.Link>Donate</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to="/contact">
+          <Nav.Link>Contact Us</Nav.Link>
+        </LinkContainer>
       </Nav>
     </Collapse>
     </Container>
