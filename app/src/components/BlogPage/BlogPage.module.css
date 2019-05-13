@@ -1,3 +1,7 @@
 .sectionDivider {
   border-color: #F7998A;
 }
+
+.headerImage {
+  max-height: 600px;
+}

@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { Container, Pagination, Row, Col, Image, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFileAlt, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faAngleRight, faComments, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { posts } from '../../data/blog';
 
 const iconMap = {
-  'text': faFileAlt
+  'text': faFileAlt,
+  'interview': faComments,
+  'letter': faEnvelope
 };
 
 const BlogList = () => {

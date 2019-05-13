@@ -15,21 +15,33 @@ const BlogPage = ({ match }) => {
       <hr className={styles.sectionDivider} />
       <p><FontAwesomeIcon icon={faClock} /> Posted on {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
       <hr className={styles.sectionDivider} />
-      <Row className="d-flex justify-content-center">
-        <Col>
-          <Image src={headerImage} fluid rounded />
-        </Col>
-      </Row>
-      <hr className={styles.sectionDivider} />
+      {
+        headerImage ?
+        <React.Fragment>
+          <Row>
+            <Col className="d-flex justify-content-center">
+              <Image src={headerImage} fluid rounded className={styles.headerImage} />
+            </Col>
+          </Row>
+          <hr className={styles.sectionDivider} />
+        </React.Fragment> 
+        : ''
+      }
       <Row>
         <Col>
           {
             body.map(section => {
               switch(section.type) {
                 case 'lead':
-                  return <p className="lead">{section.text}</p>;
+                  return (<p className="lead">{section.text}</p>);
                 case 'paragraph':
                   return (<p>{section.text}</p>);
+                case 'h2':
+                  return (<h2>{section.text}</h2>)
+                case 'divider':
+                  return (<hr className={styles.sectionDivider} />)
+                case 'small':
+                  return (<small>{section.text}</small>)
                 default:
                   return '';
               }
