@@ -16,26 +16,30 @@ import EventCalendar from './components/get-involved/EventCalendar';
 import VolunteerPage from './components/get-involved/VolunteerPage';
 import DonatePage from './components/DonatePage';
 import ContactPage from './components/ContactPage';
+import ScrollToTop from './utils/ScrollToTop';
 
 const App = () => (
   <Router>
-    <KFPNavbar />
-    <Switch>
-      <Route exact path="/" component={HomePage} />
-      <Route exact path="/about" component={AboutPage} />
-      <Route exact path="/team" component={TeamPage} />
-      <Route exact path="/programs/inshelter" component={InShelter} />
-      <Route exact path="/programs/scholarship" component={Scholarship} />
-      <Route exact path="/partners" component={PartnersPage} />
-      <Route exact path="/events" component={EventCalendar} />
-      <Route exact path="/volunteer" component={VolunteerPage} />
-      <Route exact path="/blog" component={BlogList} />
-      <Route path="/blog/:id" component={BlogPage} />
-      <Route path="/donate" component={DonatePage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route component={NotFound} />
-    </Switch>
-    <KFPFooter />
+    <ScrollToTop>
+      <KFPNavbar />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/team" component={TeamPage} />
+        <Route exact path="/programs/inshelter" component={InShelter} />
+        <Route exact path="/programs/scholarship" component={Scholarship} />
+        <Route exact path="/partners" component={PartnersPage} />
+        <Route exact path="/events" component={EventCalendar} />
+        <Route exact path="/volunteer" component={VolunteerPage} />
+        <Route exact path="/blog" component={BlogList} />
+        <Route exact path="/blog/:page" component={BlogList} />
+        <Route path="/blog/post/:id" component={BlogPage} />
+        <Route path="/donate" component={DonatePage} />
+        <Route path="/contact" component={ContactPage} />
+        <Route component={NotFound} />
+      </Switch>
+      <KFPFooter />
+    </ScrollToTop>
   </Router>
 );
 

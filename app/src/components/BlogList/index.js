@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Pagination, Row, Col, Image, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileAlt, faAngleRight, faComments, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 import { posts } from '../../data/blog';
 
 const iconMap = {
@@ -12,16 +13,18 @@ const iconMap = {
   'letter': faEnvelope
 };
 
-const BlogList = () => {
-  const [ pageNum, setPageNum ] = useState(1);
+const BlogList = ({ match }) => {
+  const pageNum = parseInt(match.params.page) || 1;
 
   const pages = posts.length;
   const paginationItems = [];
   for (let number = 1; number <= pages; number++) {
     paginationItems.push(
-      <Pagination.Item key={number} active={number === pageNum} onClick={() => setPageNum(number)}>
-        {number}
-      </Pagination.Item>,
+      <LinkContainer exact to={'/blog' + (number === 1 ? '' : `/${number}`)}>
+        <Pagination.Item key={number} active={number === pageNum}>
+          {number}
+        </Pagination.Item>
+      </LinkContainer>
     );
   }
 
@@ -40,22 +43,22 @@ const BlogList = () => {
               {
                 post.headerImage ? 
                 <Col md={4} className="d-flex align-items-center justify-content-center">
-                  <Link to={`/blog/${post.id}`}>
+                  <Link to={`/blog/post/${post.id}`}>
                     <Image src={post.headerImage} fluid rounded />
                   </Link>
                 </Col>
                 : ''
               }
               <Col className="d-flex flex-column justify-content-center">
-                <Link to={`/blog/${post.id}`}>
+                <Link to={`/blog/post/${post.id}`}>
                   <h3>
                       {post.title}
                   </h3>
                 </Link>
-                <p class="lead">
+                <p className="lead">
                   {post.summary}
                 </p>
-                <Link to={`/blog/${post.id}`}>
+                <Link to={`/blog/post/${post.id}`}>
                   <Button variant="primary">
                     Read More <FontAwesomeIcon icon={faAngleRight} />
                   </Button>

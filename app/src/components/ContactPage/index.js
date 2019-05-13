@@ -11,7 +11,7 @@ const ContactPage = () => (
     <Row>
       <Col>
         <Media>
-          <a href="mailto:office@kidsfirstproject.org">
+          <a href="mailto:info@kidsfirstproject.org">
             <span className="fa-layers fa-fw fa-4x">
               <FontAwesomeIcon icon={faSquare} color="#60CCCC"/>
               <FontAwesomeIcon icon={faEnvelope} color="white" transform="shrink-6"/>
@@ -19,7 +19,7 @@ const ContactPage = () => (
           </a>
           <Media.Body>
             <h5>Office</h5>
-            <p>office@kidsfirstproject.org</p>
+            <p>info@kidsfirstproject.org</p>
           </Media.Body>
         </Media>
       </Col>
