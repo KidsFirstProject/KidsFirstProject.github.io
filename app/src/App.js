@@ -12,6 +12,7 @@ import Scholarship from './components/programs/scholarship';
 import PartnersPage from './components/partners';
 import BlogList from './components/blog-list';
 import BlogPage from './components/blog-page';
+import EventCalendar from './components/get-involved/EventCalendar';
 
 const App = () => (
   <Router>
@@ -23,7 +24,7 @@ const App = () => (
       <Route exact path="/programs/inshelter" component={InShelter} />
       <Route exact path="/programs/scholarship" component={Scholarship} />
       <Route exact path="/partners" component={PartnersPage} />
-
+      <Route exact path="/events" component={EventCalendar} />
       <Route exact path="/blog" component={BlogList} />
       <Route path="/blog/:id" component={BlogPage} />
       <Route component={NotFound} />
