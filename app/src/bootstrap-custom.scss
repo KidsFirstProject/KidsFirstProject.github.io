@@ -9,6 +9,12 @@ $dropdown-link-color: #ffffff;
 
 $navbar-dark-color: white;
 $navbar-dark-hover-color: #60CCCC;
+$nav-tabs-link-active-color: white;
+$nav-tabs-link-active-bg: #fba395;
+
+.active.nav-link {
+  background-color: #fba395;
+}
 
 .btn-primary {
   color: white !important;
