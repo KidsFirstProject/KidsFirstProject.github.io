@@ -18,13 +18,17 @@ const InShelter = () => (
     </Row>
     <br />
     <Row>
-      <h2>Primary Programs</h2>
+      <Col>
+        <h2>Primary Programs</h2>
+      </Col>
     </Row>
     <hr />
     <PrimaryTabs />
     <br />
     <Row>
-      <h2>Program List</h2>
+      <Col>
+        <h2>Program List</h2>
+      </Col>
     </Row>
     <hr />
     <ProgramList />

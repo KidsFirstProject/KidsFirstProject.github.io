@@ -9,6 +9,8 @@ import TeamPage from './components/team';
 import './bootstrap-custom.scss';
 import InShelter from './components/programs/inshelter';
 import PartnersPage from './components/partners';
+import BlogList from './components/blog-list';
+import BlogPage from './components/blog-page';
 
 const App = () => (
   <Router>
@@ -20,7 +22,8 @@ const App = () => (
       <Route exact path="/programs/inshelter" component={InShelter} />
       <Route exact path="/partners" component={PartnersPage} />
 
-      <Route exact path="/partners" component={PartnersPage} />
+      <Route exact path="/blog" component={BlogList} />
+      <Route path="/blog/:id" component={BlogPage} />
       <Route component={NotFound} />
     </Switch>
     <KFPFooter />

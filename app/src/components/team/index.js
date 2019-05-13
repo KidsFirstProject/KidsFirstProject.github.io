@@ -22,7 +22,9 @@ const TeamPage = () => (
       </Col>
     </Row>
     <Row className={styles.teamSection}>
-      <h2>Board of Directors</h2>
+      <Col>
+        <h2>Board of Directors</h2>
+      </Col>
     </Row>
     <hr/>
     <Row>
@@ -33,7 +35,9 @@ const TeamPage = () => (
       }
     </Row>
     <Row className={styles.teamSection}>
-      <h2>Volunteer Leaders</h2>
+      <Col>
+        <h2>Volunteer Leaders</h2>
+      </Col>
     </Row>
     <hr/>
     <Row>
@@ -44,7 +48,9 @@ const TeamPage = () => (
       }
     </Row>
     <Row className={styles.teamSection}>
-      <h2>Advisory Board</h2>
+      <Col>
+        <h2>Advisory Board</h2>
+      </Col>
     </Row>
     <hr/>
     <Row>
@@ -55,7 +61,9 @@ const TeamPage = () => (
       }
     </Row>
     <Row className={styles.teamSection}>
-      <h2>Our Sponsors</h2>
+      <Col>
+        <h2>Our Sponsors</h2>
+      </Col>
     </Row>
     <hr/>
     <Row>
