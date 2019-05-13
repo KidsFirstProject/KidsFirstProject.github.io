@@ -17,6 +17,7 @@ import VolunteerPage from './components/get-involved/VolunteerPage';
 import DonatePage from './components/DonatePage';
 import ContactPage from './components/ContactPage';
 import ScrollToTop from './utils/ScrollToTop';
+import ChaptersPage from './components/get-involved/ChaptersPage';
 
 const App = () => (
   <Router>
@@ -31,6 +32,7 @@ const App = () => (
         <Route exact path="/partners" component={PartnersPage} />
         <Route exact path="/events" component={EventCalendar} />
         <Route exact path="/volunteer" component={VolunteerPage} />
+        <Route exact path="/chapters" component={ChaptersPage} />
         <Route exact path="/blog" component={BlogList} />
         <Route exact path="/blog/:page" component={BlogList} />
         <Route path="/blog/post/:id" component={BlogPage} />
