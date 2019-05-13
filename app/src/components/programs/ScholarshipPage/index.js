@@ -17,7 +17,7 @@ const ScholarshipPage = () => (
         </ul>
         <p>We rely on the support of people and businesses in our community who share our vision that every young person can access educational opportunities to reach their full potential. Please help us continue our scholarship program by making a donation <Link to="/donate">here</Link>. Every dollar counts!</p>
         <p>If you have any questions, ideas, or just want to talk, please reach out to our Scholarship Director, Ashley Lin at <a href="mailto:yuhsuanlin2003@gmail.com" target="_top">yuhsuanlin2003@gmail.com</a></p>
-        <p>Apply as a <Button href="https://goo.gl/forms/2177fGj8ht1bNW192" target="_blank" rel="noopener">Student</Button> <Button href="https://goo.gl/forms/UTU7c1zcDkwAodgZ2" target="_blank" rel="noopener">Parent</Button></p>
+        <p>Apply as a <Button href="https://goo.gl/forms/2177fGj8ht1bNW192" target="_blank" rel="noopener noreferrer">Student</Button> <Button href="https://goo.gl/forms/UTU7c1zcDkwAodgZ2" target="_blank" rel="noopener noreferrer">Parent</Button></p>
       </Col>
     </Row>
   </Container>

@@ -13,6 +13,7 @@ import PartnersPage from './components/PartnersPage';
 import BlogList from './components/BlogList';
 import BlogPage from './components/BlogPage';
 import EventCalendar from './components/get-involved/EventCalendar';
+import VolunteerPage from './components/get-involved/VolunteerPage';
 
 const App = () => (
   <Router>
@@ -25,6 +26,7 @@ const App = () => (
       <Route exact path="/programs/scholarship" component={Scholarship} />
       <Route exact path="/partners" component={PartnersPage} />
       <Route exact path="/events" component={EventCalendar} />
+      <Route exact path="/volunteer" component={VolunteerPage} />
       <Route exact path="/blog" component={BlogList} />
       <Route path="/blog/:id" component={BlogPage} />
       <Route component={NotFound} />
