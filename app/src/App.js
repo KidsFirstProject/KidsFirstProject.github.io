@@ -15,6 +15,7 @@ import BlogPage from './components/BlogPage';
 import EventCalendar from './components/get-involved/EventCalendar';
 import VolunteerPage from './components/get-involved/VolunteerPage';
 import DonatePage from './components/DonatePage';
+import ContactPage from './components/ContactPage';
 
 const App = () => (
   <Router>
@@ -31,6 +32,7 @@ const App = () => (
       <Route exact path="/blog" component={BlogList} />
       <Route path="/blog/:id" component={BlogPage} />
       <Route path="/donate" component={DonatePage} />
+      <Route path="/contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
     <KFPFooter />
