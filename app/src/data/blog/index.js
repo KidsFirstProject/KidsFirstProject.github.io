@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import Blog20170418 from './2017-04-18';
 import Blog20170419 from './2017-04-19';
 import Blog20171006 from './2017-10-06';
 import Blog20171007 from './2017-10-07';
@@ -12,7 +13,8 @@ const allPosts = [
   Blog20180514,
   Blog20171007,
   Blog20171006,
-  Blog20170419
+  Blog20170419,
+  Blog20170418
 ]
 
 export const posts = _.chunk(allPosts, 5);

@@ -19,7 +19,7 @@ const BlogList = () => {
   const paginationItems = [];
   for (let number = 1; number <= pages; number++) {
     paginationItems.push(
-      <Pagination.Item key={number} active={number === pageNum}>
+      <Pagination.Item key={number} active={number === pageNum} onClick={() => setPageNum(number)}>
         {number}
       </Pagination.Item>,
     );

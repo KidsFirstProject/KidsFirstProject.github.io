@@ -36,8 +36,8 @@ const BlogPage = ({ match }) => {
                   return (<p className="lead">{section.text}</p>);
                 case 'paragraph':
                   return (<p>{section.text}</p>);
-                case 'h2':
-                  return (<h2>{section.text}</h2>)
+                case 'strong':
+                  return (<strong>{section.text}</strong>)
                 case 'divider':
                   return (<hr className={styles.sectionDivider} />)
                 case 'small':
