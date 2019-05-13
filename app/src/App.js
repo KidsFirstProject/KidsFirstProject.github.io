@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import KFPNavbar from './components/KFPNavbar';
 import KFPFooter from './components/KFPFooter';
 import NotFound from './components/NotFound';
-import HomePage from './components/home';
-import AboutPage from './components/about';
-import TeamPage from './components/team';
+import HomePage from './components/HomePage';
+import AboutPage from './components/AboutPage';
+import TeamPage from './components/TeamPage';
 import './bootstrap-custom.scss';
 import InShelter from './components/programs/inshelter';
-import Scholarship from './components/programs/scholarship';
-import PartnersPage from './components/partners';
-import BlogList from './components/blog-list';
-import BlogPage from './components/blog-page';
+import Scholarship from './components/programs/ScholarshipPage';
+import PartnersPage from './components/PartnersPage';
+import BlogList from './components/BlogList';
+import BlogPage from './components/BlogPage';
 import EventCalendar from './components/get-involved/EventCalendar';
 
 const App = () => (

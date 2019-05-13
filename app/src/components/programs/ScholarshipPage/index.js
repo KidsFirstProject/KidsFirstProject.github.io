@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Col, Row, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const Scholarship = () => (
+const ScholarshipPage = () => (
   <Container className="page-container">
     <h1>Scholarship Program</h1>
     <hr />
@@ -23,4 +23,4 @@ const Scholarship = () => (
   </Container>
 );
 
-export default Scholarship;
+export default ScholarshipPage;

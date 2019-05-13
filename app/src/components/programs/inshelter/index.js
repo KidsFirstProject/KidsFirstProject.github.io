@@ -4,7 +4,7 @@ import PrimaryTabs from './PrimaryTabs';
 import ProgramList from './ProgramList';
 import headerImage from '../../../assets/images/shelter/shelter016.jpg';
 
-const InShelter = () => (
+const InShelterPage = () => (
   <Container className="page-container">
     <h1>In-Shelter Services</h1>
     <hr />
@@ -35,4 +35,4 @@ const InShelter = () => (
   </Container>
 );
 
-export default InShelter;
+export default InShelterPage;
