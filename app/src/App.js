@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import KFPNavbar from './components/KFPNavbar';
 import KFPFooter from './components/KFPFooter';
 import NotFound from './components/NotFound';
@@ -22,6 +23,11 @@ import AdvocacyPage from './components/AdvocacyPage';
 
 const App = () => (
   <Router>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Kids First Project</title>
+      <meta name="title" content="Kids First Project | Help Empower Homeless Youth" />
+    </Helmet>
     <ScrollToTop>
       <KFPNavbar />
       <Switch>
