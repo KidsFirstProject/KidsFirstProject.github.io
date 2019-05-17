@@ -1,0 +1,23 @@
+$theme-colors: (
+  "primary": #60CCCC,
+  "secondary": #F7998A
+);
+
+$dropdown-bg: #f5998b;
+$dropdown-color: #ffffff;
+$dropdown-link-color: #ffffff;
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: #60CCCC;
+$nav-tabs-link-active-color: white;
+$nav-tabs-link-active-bg: #fba395;
+
+.active.nav-link {
+  background-color: #fba395;
+}
+
+.btn-primary {
+  color: white !important;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';

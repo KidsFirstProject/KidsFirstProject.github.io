@@ -1,0 +1,21 @@
+.sectionDivider {
+  border-color: #F7998A;
+}
+
+.headerImage {
+  max-height: 600px;
+}
+
+.blogImage {
+  max-height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carouselItem {
+  max-height: 600px;
+}
+
+.carouselImage {
+  object-fit: cover;
+}
