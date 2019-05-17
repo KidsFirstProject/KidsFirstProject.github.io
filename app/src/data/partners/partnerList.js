@@ -13,7 +13,7 @@ const partnerList = [
     ctaUrl: 'http://www.centralcityconcern.org/ccc/'
   },
   {
-    imageUrl: images['codeRed.jpg'],
+    imageUrl: images['codered.jpg'],
     name: 'Code Red',
     description:
       'Code Red seeks to provide feminine hygiene products to homeless women in need, giving them an effective and healthy way to manage their periods, and empowering women to take care of themselves.',
