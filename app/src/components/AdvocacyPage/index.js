@@ -6,8 +6,7 @@ const AdvocacyPage = () => (
     <h1>Summer Advocacy Fellowship</h1>
     <hr />
     <Row>
-      <Col>
-      </Col>
+      <Col />
     </Row>
   </Container>
 );

@@ -8,7 +8,10 @@ const EventCalendar = () => (
     <Row>
       <Col>
         <ResponsiveEmbed aspectRatio="16by9">
-          <iframe title="Event Calendar" src="https://www.google.com/calendar/embed?src=pdxkidsfirst%40gmail.com&amp;showCalendars=0&amp;ctz=America/Los_Angeles" />
+          <iframe
+            title="Event Calendar"
+            src="https://www.google.com/calendar/embed?src=pdxkidsfirst%40gmail.com&amp;showCalendars=0&amp;ctz=America/Los_Angeles"
+          />
         </ResponsiveEmbed>
       </Col>
     </Row>

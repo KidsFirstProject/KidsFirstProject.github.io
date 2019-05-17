@@ -6,7 +6,9 @@ const KFPFooter = () => (
   <Row className={styles.footerRow}>
     <Col>
       <Container className={styles.footerContainer}>
-        <p className="text-center">Copyright &copy; Kid First Project {new Date().getFullYear()}</p>
+        <p className="text-center">
+          Copyright &copy; Kid First Project {new Date().getFullYear()}
+        </p>
       </Container>
     </Col>
   </Row>

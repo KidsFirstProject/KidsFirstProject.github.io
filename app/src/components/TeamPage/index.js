@@ -11,14 +11,19 @@ import sponsors from '../../data/team/sponsors';
 const TeamPage = () => (
   <Container className="page-container">
     <h1>Our Team</h1>
-    <hr/>
+    <hr />
     <Row>
       <Col>
         <Image fluid src={teamImage} rounded />
       </Col>
       <Col className="d-flex flex-column justify-content-center">
         <h2>Who we are</h2>
-        <p>We’re a group of individuals passionate about social justice and youth empowerment who have come together to bridge the gap between a child experiencing homelessness and the resources needed to help them reach their full potential.</p>
+        <p>
+          We’re a group of individuals passionate about social justice and youth
+          empowerment who have come together to bridge the gap between a child
+          experiencing homelessness and the resources needed to help them reach
+          their full potential.
+        </p>
       </Col>
     </Row>
     <Row className={styles.teamSection}>
@@ -26,55 +31,47 @@ const TeamPage = () => (
         <h2>Board of Directors</h2>
       </Col>
     </Row>
-    <hr/>
+    <hr />
     <Row>
-      {
-        directors.map(director => (
-          <MemberCard member={director} />
-        ))
-      }
+      {directors.map(director => (
+        <MemberCard member={director} />
+      ))}
     </Row>
     <Row className={styles.teamSection}>
       <Col>
         <h2>Volunteer Leaders</h2>
       </Col>
     </Row>
-    <hr/>
+    <hr />
     <Row>
-      {
-        volunteerLeaders.map(leader => (
-          <MemberCard member={leader} />
-        ))
-      }
+      {volunteerLeaders.map(leader => (
+        <MemberCard member={leader} />
+      ))}
     </Row>
     <Row className={styles.teamSection}>
       <Col>
         <h2>Advisory Board</h2>
       </Col>
     </Row>
-    <hr/>
+    <hr />
     <Row>
-      {
-        advisors.map(advisor => (
-          <MemberCard member={advisor} />
-        ))
-      }
+      {advisors.map(advisor => (
+        <MemberCard member={advisor} />
+      ))}
     </Row>
     <Row className={styles.teamSection}>
       <Col>
         <h2>Our Sponsors</h2>
       </Col>
     </Row>
-    <hr/>
+    <hr />
     <Row>
       <CardColumns>
-        {
-          sponsors.map(imageUrl => (
-            <Card border="secondary">
-              <Card.Img fluid className='p-3' src={imageUrl} />
-            </Card>
-          ))
-        }
+        {sponsors.map(imageUrl => (
+          <Card border="secondary">
+            <Card.Img fluid className="p-3" src={imageUrl} />
+          </Card>
+        ))}
       </CardColumns>
     </Row>
   </Container>

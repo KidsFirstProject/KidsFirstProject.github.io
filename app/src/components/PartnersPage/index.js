@@ -8,12 +8,10 @@ const PartnersPage = () => (
   <Container className="page-container">
     <h1>Our Partners</h1>
     <hr />
-    {
-      partnerList.map(partner => ([
-        <PartnerSection partner={partner} />,
-        <hr className={styles.sectionDivider} />
-      ]))
-    }
+    {partnerList.map(partner => [
+      <PartnerSection partner={partner} />,
+      <hr className={styles.sectionDivider} />
+    ])}
   </Container>
 );
 

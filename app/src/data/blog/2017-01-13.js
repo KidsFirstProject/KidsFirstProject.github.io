@@ -3,7 +3,8 @@ const Blog20170113 = {
   title: 'Student Work from Poeteen’s Poetry Workshops',
   type: 'text',
   publishDate: '2017-01-13',
-  summary: 'Poetry created by youth staying at New Avenues for Youth, compiled by Sophia Mautz, one of our Volunteer Leaders.',
+  summary:
+    'Poetry created by youth staying at New Avenues for Youth, compiled by Sophia Mautz, one of our Volunteer Leaders.',
   body: [
     {
       type: 'heading',
@@ -15,11 +16,13 @@ const Blog20170113 = {
     },
     {
       type: 'paragraph',
-      text: 'How do you know about the moss that clings to the sea-sprayed rock?'
+      text:
+        'How do you know about the moss that clings to the sea-sprayed rock?'
     },
     {
       type: 'paragraph',
-      text: 'Did it whisper its story to you as you brushed your fingers through its soft beds of hair?'
+      text:
+        'Did it whisper its story to you as you brushed your fingers through its soft beds of hair?'
     },
     {
       type: 'divider'
@@ -57,7 +60,8 @@ const Blog20170113 = {
     },
     {
       type: 'paragraph',
-      text: 'When I was a field hand in Shanghai I loved licking the dried salt off my fingers at the end of the day.'
+      text:
+        'When I was a field hand in Shanghai I loved licking the dried salt off my fingers at the end of the day.'
     },
     {
       type: 'paragraph',
@@ -65,9 +69,10 @@ const Blog20170113 = {
     },
     {
       type: 'paragraph',
-      text: 'When I was the wind I loved the trees, and when I was a tree I loved the wind.'
+      text:
+        'When I was the wind I loved the trees, and when I was a tree I loved the wind.'
     }
   ]
-}
+};
 
 export default Blog20170113;

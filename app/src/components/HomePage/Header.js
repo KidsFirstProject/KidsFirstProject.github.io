@@ -8,8 +8,16 @@ import volunteerImage from '../../assets/images/shelter/shelter018.jpg';
 const Header = () => (
   <Carousel pauseOnHover={false}>
     <Carousel.Item>
-      <div className={`${styles.carouselItem} d-flex flex-column justify-content-center`}>
-        <img className={`d-block w-100 ${styles.carouselImage}`} src={aboutImage} alt="First slide" />
+      <div
+        className={`${
+          styles.carouselItem
+        } d-flex flex-column justify-content-center`}
+      >
+        <img
+          className={`d-block w-100 ${styles.carouselImage}`}
+          src={aboutImage}
+          alt="First slide"
+        />
       </div>
       <Carousel.Caption>
         <h1>HOPE</h1>
@@ -20,12 +28,23 @@ const Header = () => (
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <div className={`${styles.carouselItem} d-flex flex-column justify-content-center`}>
-        <img className={`d-block w-100 ${styles.carouselImage}`} src={volunteerImage} alt="First slide" />
+      <div
+        className={`${
+          styles.carouselItem
+        } d-flex flex-column justify-content-center`}
+      >
+        <img
+          className={`d-block w-100 ${styles.carouselImage}`}
+          src={volunteerImage}
+          alt="First slide"
+        />
       </div>
       <Carousel.Caption>
         <h1>Giving HOPE to all.</h1>
-        <p>Offering homeless youth the opportunity for health, opportunity, play, education</p>
+        <p>
+          Offering homeless youth the opportunity for health, opportunity, play,
+          education
+        </p>
         <LinkContainer to="/volunteer">
           <Button variant="primary">Get Involved Today</Button>
         </LinkContainer>

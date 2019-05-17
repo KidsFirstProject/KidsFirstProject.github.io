@@ -6,11 +6,13 @@ const Blog20170115 = {
   type: 'interview',
   publishDate: '2017-01-15',
   headerImage,
-  summary: 'A current sophomore at Sunset High School, Jackie is our first Volunteer of the Month! Read on to learn more about her love for gelato and Keeping Up with the Kardashians.',
+  summary:
+    'A current sophomore at Sunset High School, Jackie is our first Volunteer of the Month! Read on to learn more about her love for gelato and Keeping Up with the Kardashians.',
   body: [
     {
       type: 'lead',
-      text: 'A current sophomore at Sunset High School, Jackie is our first Volunteer of the Month! Read on to learn more about her love for gelato and Keeping Up with the Kardashians.'
+      text:
+        'A current sophomore at Sunset High School, Jackie is our first Volunteer of the Month! Read on to learn more about her love for gelato and Keeping Up with the Kardashians.'
     },
     {
       type: 'strong',
@@ -18,7 +20,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'I volunteer at Kids First because I love hanging out with the kids here, and I learn so much from them every time I come. The people at Kids First Project keep me grounded and inspire me to become a better person.'
+      text:
+        'I volunteer at Kids First because I love hanging out with the kids here, and I learn so much from them every time I come. The people at Kids First Project keep me grounded and inspire me to become a better person.'
     },
     {
       type: 'strong',
@@ -26,7 +29,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'There are so many to choose from! One of my favorites is when I had a paper airplane throwing contest with a group of boys. We must have made over twenty different airplanes using different techniques and types of paper, and then we tested them to see which ones flew the farthest.'
+      text:
+        'There are so many to choose from! One of my favorites is when I had a paper airplane throwing contest with a group of boys. We must have made over twenty different airplanes using different techniques and types of paper, and then we tested them to see which ones flew the farthest.'
     },
     {
       type: 'strong',
@@ -34,7 +38,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'Gelato!! Absolutely addicted to that stuff. But I wouldn\'t be able to stop eating it, so I might go out of business.'
+      text:
+        "Gelato!! Absolutely addicted to that stuff. But I wouldn't be able to stop eating it, so I might go out of business."
     },
     {
       type: 'strong',
@@ -42,7 +47,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'I would be over the moon if Aubrey Anderson-Emmons played me as a kid, I love her character in Modern Family!'
+      text:
+        'I would be over the moon if Aubrey Anderson-Emmons played me as a kid, I love her character in Modern Family!'
     },
     {
       type: 'strong',
@@ -50,7 +56,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'I\'m secretly obsessed with Keeping Up with the Kardashians (shhhhh)!'
+      text:
+        "I'm secretly obsessed with Keeping Up with the Kardashians (shhhhh)!"
     },
     {
       type: 'strong',
@@ -58,7 +65,8 @@ const Blog20170115 = {
     },
     {
       type: 'paragraph',
-      text: 'Three million? No, wait, 50 million! 50 billion! It has to be some crazy huge number...'
+      text:
+        'Three million? No, wait, 50 million! 50 billion! It has to be some crazy huge number...'
     },
     {
       type: 'strong',
@@ -69,6 +77,6 @@ const Blog20170115 = {
       text: 'Purpose.'
     }
   ]
-}
+};
 
 export default Blog20170115;

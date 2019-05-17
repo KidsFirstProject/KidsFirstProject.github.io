@@ -6,7 +6,11 @@ const KFPVideo = () => (
   <Row className={styles.videoContainer}>
     <Col>
       <ResponsiveEmbed aspectRatio="16by9">
-        <iframe title="Mission Video" src="https://www.youtube.com/embed/7xA_nM8q8gI" allowfullscreen />
+        <iframe
+          title="Mission Video"
+          src="https://www.youtube.com/embed/7xA_nM8q8gI"
+          allowFullScreen
+        />
       </ResponsiveEmbed>
     </Col>
   </Row>

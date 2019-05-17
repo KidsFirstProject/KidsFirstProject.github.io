@@ -24,6 +24,6 @@ const Blog20150918 = {
       file: LetterFromPat
     }
   ]
-}
+};
 
 export default Blog20150918;

@@ -43,7 +43,7 @@ const allPosts = [
   Blog20150825,
   Blog20150805,
   Blog20150803
-]
+];
 
 export const posts = _.chunk(allPosts, 5);
 
@@ -51,4 +51,4 @@ export const postMap = {};
 
 allPosts.forEach(post => {
   postMap[post.id] = post;
-})
+});

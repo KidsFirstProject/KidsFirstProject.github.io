@@ -16,7 +16,7 @@ const headerImages = [
   headerImage6,
   headerImage7,
   headerImage8
-]
+];
 
 const Blog20151101 = {
   id: 20151101,
@@ -24,19 +24,23 @@ const Blog20151101 = {
   type: 'text',
   publishDate: '2015-11-01',
   headerImages,
-  summary: 'Our first program night was October 22nd with six volunteers, ranging from all ages. We had a lot of fun playing tag and games, and making art with the PHFS kids.',
+  summary:
+    'Our first program night was October 22nd with six volunteers, ranging from all ages. We had a lot of fun playing tag and games, and making art with the PHFS kids.',
   body: [
     {
       type: 'lead',
-      text: 'Our first program night was October 22nd with six volunteers, ranging from all ages. We had a lot of fun playing tag and games, and making art with the PHFS kids.'
+      text:
+        'Our first program night was October 22nd with six volunteers, ranging from all ages. We had a lot of fun playing tag and games, and making art with the PHFS kids.'
     },
     {
       type: 'paragraph',
-      text: 'Happy Halloween! Our next program night was carving pumpkins and decorating bags with the PHFS families. It was a great bonding activity and the kids were excited to celebrate the holiday. Thanks for all of the volunteers who came to help out!'
+      text:
+        'Happy Halloween! Our next program night was carving pumpkins and decorating bags with the PHFS families. It was a great bonding activity and the kids were excited to celebrate the holiday. Thanks for all of the volunteers who came to help out!'
     },
     {
       type: 'paragraph',
-      text: 'An extension to Halloween, a group of volunteers and PHFS kids ventured up to the Oregon Zoo on Halloween day. We rode the TriMet train up and back, wandered through the animals’ exhibits, participated in the Oregon Zoo’s scavenger hunt, and got a “little” wet in the rain!'
+      text:
+        'An extension to Halloween, a group of volunteers and PHFS kids ventured up to the Oregon Zoo on Halloween day. We rode the TriMet train up and back, wandered through the animals’ exhibits, participated in the Oregon Zoo’s scavenger hunt, and got a “little” wet in the rain!'
     },
     {
       type: 'author',
@@ -44,6 +48,6 @@ const Blog20151101 = {
       title: 'Director of Communications'
     }
   ]
-}
+};
 
 export default Blog20151101;

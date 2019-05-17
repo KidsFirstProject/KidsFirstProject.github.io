@@ -10,7 +10,13 @@ const InShelterPage = () => (
     <hr />
     <Row>
       <Col lg={4} className="d-flex align-items-center">
-        Our in-shelter services are an affordable and convenient way for youth experiencing homelessness to participate in extracurricular activities while in shelter. We also provide our volunteers, local community groups, and individuals the opportunity to turn their interests into a teachable curriculum to bring to the kids we serve in shelters. In the past, we have taught poetry classes created by a university student and lacrosse workshops led by a high school girls lacrosse team.
+        Our in-shelter services are an affordable and convenient way for youth
+        experiencing homelessness to participate in extracurricular activities
+        while in shelter. We also provide our volunteers, local community
+        groups, and individuals the opportunity to turn their interests into a
+        teachable curriculum to bring to the kids we serve in shelters. In the
+        past, we have taught poetry classes created by a university student and
+        lacrosse workshops led by a high school girls lacrosse team.
       </Col>
       <Col>
         <Image fluid rounded src={headerImage} />

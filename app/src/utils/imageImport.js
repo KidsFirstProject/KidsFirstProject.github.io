@@ -1,5 +1,9 @@
-export const importAll = r => {
+const importAll = r => {
   const images = {};
-  r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item)});
+  r.keys().forEach(item => {
+    images[item.replace('./', '')] = r(item);
+  });
   return images;
-}
+};
+
+export default importAll;
