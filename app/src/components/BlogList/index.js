@@ -33,41 +33,44 @@ const BlogList = ({ match }) => {
       <h1>The Kids First Project Blog</h1>
       <hr />
       {
-        posts[pageNum - 1].map(post => (
-          <React.Fragment>
-            <Row>
-              <Col md={2} className="d-flex flex-column align-items-center justify-content-center">
-                <FontAwesomeIcon icon={iconMap[post.type]} size="4x" color={'#60CCCC'} />
-                <p>{moment(post.publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
-              </Col>
-              {
-                post.headerImage ? 
-                <Col md={4} className="d-flex align-items-center justify-content-center">
-                  <Link to={`/blog/post/${post.id}`}>
-                    <Image src={post.headerImage} fluid rounded />
+        posts[pageNum - 1].map(({type, publishDate, headerImage, headerImages, id, title, summary}) => {
+          const thumbnailImage = headerImage || (headerImages ? headerImages[0] : null);
+          return (
+            <React.Fragment>
+              <Row>
+                <Col md={2} className="d-flex flex-column align-items-center justify-content-center">
+                  <FontAwesomeIcon icon={iconMap[type]} size="4x" color={'#60CCCC'} />
+                  <p>{moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
+                </Col>
+                {
+                  thumbnailImage ? 
+                  <Col md={4} className="d-flex align-items-center justify-content-center">
+                    <Link to={`/blog/post/${id}`}>
+                      <Image src={thumbnailImage} fluid rounded />
+                    </Link>
+                  </Col>
+                  : ''
+                }
+                <Col className="d-flex flex-column justify-content-center">
+                  <Link to={`/blog/post/${id}`}>
+                    <h3>
+                        {title}
+                    </h3>
+                  </Link>
+                  <p className="lead">
+                    {summary}
+                  </p>
+                  <Link to={`/blog/post/${id}`}>
+                    <Button variant="primary">
+                      Read More <FontAwesomeIcon icon={faAngleRight} />
+                    </Button>
                   </Link>
                 </Col>
-                : ''
-              }
-              <Col className="d-flex flex-column justify-content-center">
-                <Link to={`/blog/post/${post.id}`}>
-                  <h3>
-                      {post.title}
-                  </h3>
-                </Link>
-                <p className="lead">
-                  {post.summary}
-                </p>
-                <Link to={`/blog/post/${post.id}`}>
-                  <Button variant="primary">
-                    Read More <FontAwesomeIcon icon={faAngleRight} />
-                  </Button>
-                </Link>
-              </Col>
-            </Row>
-            <hr />
-          </React.Fragment>
-        ))
+              </Row>
+              <hr />
+            </React.Fragment>
+          )
+        })
       }
       <Row>
         <Col className="d-flex justify-content-center">

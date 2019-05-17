@@ -33,12 +33,9 @@ const Blog20170419 = {
       type: 'divider'
     },
     {
-      type: 'paragraph',
-      text: 'Alisha Zhao'
-    },
-    {
-      type: 'small',
-      text: 'Executive Director'
+      type: 'author',
+      name: 'Alisha Zhao',
+      title: 'Executive Director'
     }
   ]
 }

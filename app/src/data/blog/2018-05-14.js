@@ -29,8 +29,12 @@ const Blog20180514 = {
       text: 'Overall, the field trip was a success. Many of the families even came up after the expedition to ask when the next field trip would be. At the end of the day, I hope that all of the kids had the opportunity to experience and learn about wildlife that they’ve never seen before. Next stop: OMSI!'
     },
     {
-      type: 'paragraph',
-      text: '- Malcolm Asher, Operations Director'
+      type: 'divider'
+    },
+    {
+      type: 'author',
+      name: 'Malcolm Asher',
+      title: 'Operations Director'
     }
   ]
 }
