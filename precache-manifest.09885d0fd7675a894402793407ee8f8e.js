@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f71c98f6811925e0dc8961e476ed4495",
+    "revision": "1379a2b3dd8408b20839ca9e01d87be1",
     "url": "/index.html"
   },
   {
-    "revision": "345bfd8809fafa4555a5",
-    "url": "/static/css/main.7309d1d5.chunk.css"
+    "revision": "0de2e21e9c8c83fbabba",
+    "url": "/static/css/main.7ecbd643.chunk.css"
   },
   {
-    "revision": "e53d20516bdd03344b2d",
-    "url": "/static/js/2.cc463811.chunk.js"
+    "revision": "e5c3e74376d69d3764fc",
+    "url": "/static/js/2.0545f4e7.chunk.js"
   },
   {
-    "revision": "345bfd8809fafa4555a5",
-    "url": "/static/js/main.6f90e37e.chunk.js"
+    "revision": "0de2e21e9c8c83fbabba",
+    "url": "/static/js/main.b49e7c10.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -282,6 +282,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ff1a70adb50e171bdf6627fb04197de0",
     "url": "/static/media/Zhao-Alisha.ff1a70ad.jpg"
+  },
+  {
+    "revision": "64619162cc70d6f02c96a928b4e6f205",
+    "url": "/static/media/advocacy.64619162.png"
   },
   {
     "revision": "ef3b412090100c51e66f14564767d3d8",
