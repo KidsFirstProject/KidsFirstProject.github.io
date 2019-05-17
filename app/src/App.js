@@ -18,6 +18,7 @@ import DonatePage from './components/DonatePage';
 import ContactPage from './components/ContactPage';
 import ScrollToTop from './utils/ScrollToTop';
 import ChaptersPage from './components/get-involved/ChaptersPage';
+import AdvocacyPage from './components/AdvocacyPage';
 
 const App = () => (
   <Router>
@@ -33,6 +34,7 @@ const App = () => (
         <Route exact path="/events" component={EventCalendar} />
         <Route exact path="/volunteer" component={VolunteerPage} />
         <Route exact path="/chapters" component={ChaptersPage} />
+        <Route exact path="/advocacy" component={AdvocacyPage} />
         <Route exact path="/blog" component={BlogList} />
         <Route exact path="/blog/:page" component={BlogList} />
         <Route path="/blog/post/:id" component={BlogPage} />
