@@ -18,7 +18,10 @@ const VolunteerPage = () => (
     <h1>Volunteer</h1>
     <hr />
     <Row>
-      <Col md className="d-flex flex-column justify-content-center align-items-center">
+      <Col
+        md
+        className="d-flex flex-column justify-content-center align-items-center"
+      >
         <Card className={styles.card}>
           <Card.Header className={styles.cardHeader}>
             <h3 className="text-center">Already a Volunteer?</h3>

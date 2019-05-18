@@ -10,18 +10,18 @@ import benevityImage from '../../assets/images/donate/benevity.png';
 
 const donateLine = ({ amount, text }) => (
   <Row>
-  <Col md={1} className={`text-center ${styles.donateIconColumn}`}>
-    <span className="fa-layers fa-fw fa-4x">
-      <FontAwesomeIcon icon={faCircle} color="#85bb65" />
-      <span
-        className="fa-layers-text fa-inverse"
-        style={{ fontWeight: '700', fontSize: '28px' }}
-      >
-        ${amount}
+    <Col md={1} className={`text-center ${styles.donateIconColumn}`}>
+      <span className="fa-layers fa-fw fa-4x">
+        <FontAwesomeIcon icon={faCircle} color="#85bb65" />
+        <span
+          className="fa-layers-text fa-inverse"
+          style={{ fontWeight: '700', fontSize: '28px' }}
+        >
+          ${amount}
+        </span>
       </span>
-    </span>
-  </Col>
-  <Col className="d-flex align-items-center">{text}</Col>
+    </Col>
+    <Col className="d-flex align-items-center">{text}</Col>
   </Row>
 );
 
