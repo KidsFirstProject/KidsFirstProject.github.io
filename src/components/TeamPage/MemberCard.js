@@ -6,7 +6,7 @@ import styles from './MemberCard.module.css';
 const MemberCard = ({ member }) => {
   const { imageUrl, name, titles, description } = member;
   return (
-    <Col lg={4}>
+    <Col lg={4} md={6}>
       <Card
         border="secondary"
         className={styles.memberCard}

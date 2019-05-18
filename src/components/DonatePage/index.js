@@ -9,8 +9,9 @@ import fredMeyerGuide from '../../assets/pdf/Fred-Meyer-Non-profit.pdf';
 import benevityImage from '../../assets/images/donate/benevity.png';
 
 const donateLine = ({ amount, text }) => (
-  <span className="d-flex align-items-center">
-    <span className="fa-layers fa-fw fa-4x pull-left">
+  <Row>
+  <Col md={1} className={`text-center ${styles.donateIconColumn}`}>
+    <span className="fa-layers fa-fw fa-4x">
       <FontAwesomeIcon icon={faCircle} color="#85bb65" />
       <span
         className="fa-layers-text fa-inverse"
@@ -19,8 +20,9 @@ const donateLine = ({ amount, text }) => (
         ${amount}
       </span>
     </span>
-    {text}
-  </span>
+  </Col>
+  <Col className="d-flex align-items-center">{text}</Col>
+  </Row>
 );
 
 const donationLines = [
@@ -50,7 +52,7 @@ const DonatePage = () => (
     <h1>Donations</h1>
     <hr />
     <Row>
-      <Col md={8}>
+      <Col lg={8}>
         <p>
           Please join us in our effort of helping youth experiencing
           homelessness in our community reach their full potential through the

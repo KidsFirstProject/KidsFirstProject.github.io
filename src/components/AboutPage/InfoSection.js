@@ -4,7 +4,7 @@ import { string } from 'prop-types';
 
 const InfoSection = ({ imageUrl, title, text }) => (
   <Row>
-    <Col>
+    <Col lg className="d-flex flex-column justify-content-center">
       <Image src={imageUrl} fluid rounded />
     </Col>
     <Col className="d-flex flex-column justify-content-center">

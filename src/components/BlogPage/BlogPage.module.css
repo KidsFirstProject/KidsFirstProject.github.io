@@ -16,6 +16,18 @@
   max-height: 600px;
 }
 
+@media (max-width: 991px) {
+  .carouselItem {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselItem {
+    max-height: 200px;
+  }
+}
+
 .carouselImage {
   object-fit: cover;
 }

@@ -7,7 +7,7 @@ import programs from '../../../data/programs/programs';
 const ProgramList = () => (
   <Row>
     {programs.map(program => (
-      <Col md={4}>
+      <Col lg={4} md={6}>
         <h5>{program.title}</h5>
         <Media>
           <span className="fa-layers fa-fw fa-3x pull-left">

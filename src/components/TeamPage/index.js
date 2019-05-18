@@ -13,7 +13,7 @@ const TeamPage = () => (
     <h1>Our Team</h1>
     <hr />
     <Row>
-      <Col>
+      <Col lg>
         <Image fluid src={teamImage} rounded />
       </Col>
       <Col className="d-flex flex-column justify-content-center">

@@ -18,7 +18,7 @@ const VolunteerPage = () => (
     <h1>Volunteer</h1>
     <hr />
     <Row>
-      <Col className="d-flex flex-column justify-content-center align-items-center">
+      <Col md className="d-flex flex-column justify-content-center align-items-center">
         <Card className={styles.card}>
           <Card.Header className={styles.cardHeader}>
             <h3 className="text-center">Already a Volunteer?</h3>
@@ -37,13 +37,13 @@ const VolunteerPage = () => (
           </Card.Body>
         </Card>
       </Col>
-      <Col>
+      <Col md className="d-flex align-items-center">
         <Image src={signUpImage} fluid rounded />
       </Col>
     </Row>
     <hr className={styles.sectionDivider} />
     <Row>
-      <Col>
+      <Col md className="d-flex flex-column justify-content-center">
         <h2>Why volunteer?</h2>
         <p>
           Our entire program is run by volunteers, from the creation of our

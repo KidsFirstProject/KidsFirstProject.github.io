@@ -18,7 +18,7 @@ const ContactPage = () => (
     <h1>Contact Us</h1>
     <hr />
     <Row>
-      <Col>
+      <Col lg>
         <Media>
           <a href="mailto:info@kidsfirstproject.org">
             <span className="fa-layers fa-fw fa-4x">
@@ -36,7 +36,7 @@ const ContactPage = () => (
           </Media.Body>
         </Media>
       </Col>
-      <Col>
+      <Col lg>
         <Media>
           <a href="tel:971-800-1243">
             <span className="fa-layers fa-fw fa-4x">
@@ -54,7 +54,7 @@ const ContactPage = () => (
           </Media.Body>
         </Media>
       </Col>
-      <Col>
+      <Col lg>
         <Media className="d-flex flex-row align-items-center">
           <a href="https://github.com/KidsFirstProject/KidsFirstProject.github.io/issues">
             <span className="fa-layers fa-fw fa-4x">
@@ -81,10 +81,10 @@ const ContactPage = () => (
     </Row>
     <hr />
     <Row>
-      <Col md={12}>
+      <Col sm={12}>
         <h2>Follow us:</h2>
       </Col>
-      <Col>
+      <Col lg>
         <Media className="d-flex flex-row align-items-center">
           <a href="http://facebook.com/kidsfirstproject">
             <span className="fa-layers fa-fw fa-4x">
@@ -101,7 +101,7 @@ const ContactPage = () => (
           </Media.Body>
         </Media>
       </Col>
-      <Col>
+      <Col lg>
         <Media className="d-flex flex-row align-items-center">
           <a href="http://instagram.com/kidsfirstproject">
             <span className="fa-layers fa-fw fa-4x">
@@ -118,7 +118,7 @@ const ContactPage = () => (
           </Media.Body>
         </Media>
       </Col>
-      <Col>
+      <Col lg>
         <Media className="d-flex flex-row align-items-center">
           <a href="http://twitter.com/pdxkidsfirst">
             <span className="fa-layers fa-fw fa-4x">

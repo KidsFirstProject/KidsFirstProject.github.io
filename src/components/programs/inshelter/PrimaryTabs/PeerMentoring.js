@@ -14,7 +14,7 @@ const PeerMentoring = () => {
       </ResponsiveEmbed>
       <br />
       <Row>
-        <Col>
+        <Col lg>
           <Button
             variant="primary"
             href="https://docs.google.com/forms/d/1A7BR4T3lNH-Ykl0SyrBeVkG7wM2PDLOu-BN5ATa2fag/viewform?c=0&w=1"

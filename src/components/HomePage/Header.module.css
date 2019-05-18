@@ -2,6 +2,12 @@
   max-height: 625px;
 }
 
+@media (max-width: 991px) {
+  .carouselItem {
+    max-height: 400px;
+  }
+}
+
 .carouselImage {
   object-fit: cover;
 }
