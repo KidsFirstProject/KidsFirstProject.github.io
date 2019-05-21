@@ -35,6 +35,9 @@ const KFPNavbar = () => (
           <LinkContainer to="/team">
             <Nav.Link>Our Team</Nav.Link>
           </LinkContainer>
+          <LinkContainer to="/advocacy">
+            <Nav.Link>Advocacy</Nav.Link>
+          </LinkContainer>
           <NavDropdown title="Programs">
             <LinkContainer to="/programs/inshelter">
               <NavDropdown.Item>In-Shelter Services</NavDropdown.Item>
@@ -57,9 +60,6 @@ const KFPNavbar = () => (
               <NavDropdown.Item>Chapters</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
-          <LinkContainer to="/advocacy">
-            <Nav.Link>Advocacy</Nav.Link>
-          </LinkContainer>
           <LinkContainer to="/blog">
             <Nav.Link>Blog</Nav.Link>
           </LinkContainer>

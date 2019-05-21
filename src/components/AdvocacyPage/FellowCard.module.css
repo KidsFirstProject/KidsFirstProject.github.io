@@ -1,0 +1,32 @@
+.fellowCard {
+  margin-bottom: 20px;
+  /* height: 700px; */
+  border-width: 4px;
+}
+
+.fellowBiography {
+  text-align: center;
+}
+
+.fellowImage {
+  max-height: 200px;
+  border-radius: 10px;
+}
+
+.biographyButton {
+  background-color: white;
+  border: none;
+}
+
+.biographyButton:focus {
+  box-shadow: none;
+}
+
+.biographyButton:not(:disabled):not(.disabled):active {
+  background-color: white;
+}
+
+.biographyButton:hover {
+  background-color: white;
+  border: none;
+}
