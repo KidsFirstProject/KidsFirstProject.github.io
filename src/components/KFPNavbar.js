@@ -46,9 +46,6 @@ const KFPNavbar = () => (
               <NavDropdown.Item>Scholarship Program</NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
-          <LinkContainer to="/partners">
-            <Nav.Link>Our Partners</Nav.Link>
-          </LinkContainer>
           <NavDropdown title="Get Involved">
             <LinkContainer to="/events">
               <NavDropdown.Item>Event Calendar</NavDropdown.Item>

@@ -10,7 +10,6 @@ import TeamPage from './components/TeamPage';
 import './bootstrap-custom.scss';
 import InShelter from './components/programs/inshelter';
 import Scholarship from './components/programs/ScholarshipPage';
-import PartnersPage from './components/PartnersPage';
 import BlogList from './components/BlogList';
 import BlogPage from './components/BlogPage';
 import EventCalendar from './components/get-involved/EventCalendar';
@@ -39,7 +38,6 @@ const App = () => (
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/programs/inshelter" component={InShelter} />
         <Route exact path="/programs/scholarship" component={Scholarship} />
-        <Route exact path="/partners" component={PartnersPage} />
         <Route exact path="/events" component={EventCalendar} />
         <Route exact path="/volunteer" component={VolunteerPage} />
         <Route exact path="/chapters" component={ChaptersPage} />
@@ -59,7 +57,6 @@ const App = () => (
           path="/programs/scholarship.html"
           component={Scholarship}
         />
-        <Route exact path="/partners.html" component={PartnersPage} />
         <Route exact path="/events.html" component={EventCalendar} />
         <Route exact path="/volunteer.html" component={VolunteerPage} />
         <Route exact path="/chapters.html" component={ChaptersPage} />
