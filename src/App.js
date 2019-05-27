@@ -20,6 +20,12 @@ import ScrollToTop from './utils/ScrollToTop';
 import ChaptersPage from './components/get-involved/ChaptersPage';
 import AdvocacyPage from './components/AdvocacyPage';
 
+import { posts as blogPosts, postMap as blogPostMap } from './data/blog';
+import {
+  posts as advocacyPosts,
+  postMap as advocacyPostMap
+} from './data/advocacy/blog';
+
 const App = () => (
   <Router>
     <Helmet>
@@ -42,9 +48,62 @@ const App = () => (
         <Route exact path="/volunteer" component={VolunteerPage} />
         <Route exact path="/chapters" component={ChaptersPage} />
         <Route exact path="/advocacy" component={AdvocacyPage} />
-        <Route exact path="/blog" component={BlogList} />
-        <Route exact path="/blog/:page" component={BlogList} />
-        <Route exact path="/blog/post/:id" component={BlogPage} />
+        <Route
+          exact
+          path="/advocacy/blog"
+          render={props => (
+            <BlogList
+              {...props}
+              pageTitle="Summer Advocacy Blog"
+              posts={advocacyPosts}
+              postPrefix="/advocacy"
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/advocacy/blog/:page"
+          render={props => (
+            <BlogList
+              {...props}
+              pageTitle="Summer Advocacy Blog"
+              posts={advocacyPosts}
+              postPrefix="/advocacy"
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/advocacy/blog/post/:id"
+          render={props => <BlogPage {...props} postMap={advocacyPostMap} />}
+        />
+        <Route
+          exact
+          path="/blog"
+          render={props => (
+            <BlogList
+              {...props}
+              pageTitle="The Kids First Project Blog"
+              posts={blogPosts}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/blog/:page"
+          render={props => (
+            <BlogList
+              {...props}
+              pageTitle="The Kids First Project Blog"
+              posts={blogPosts}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/blog/post/:id"
+          render={props => <BlogPage {...props} postMap={blogPostMap} />}
+        />
         <Route exact path="/donate" component={DonatePage} />
         <Route exact path="/contact" component={ContactPage} />
         {/* Fallback routes for old links */}

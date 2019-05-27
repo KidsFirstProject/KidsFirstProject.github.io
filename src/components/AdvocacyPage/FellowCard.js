@@ -7,7 +7,7 @@ import styles from './FellowCard.module.css';
 
 const FellowCard = ({ fellow }) => {
   const { imageUrl, name, biography } = fellow;
-  const [ biographyOpen, setBiographyOpen ] = useState(false);
+  const [biographyOpen, setBiographyOpen] = useState(false);
   return (
     <Col lg={4} md={6}>
       <Card
@@ -23,9 +23,17 @@ const FellowCard = ({ fellow }) => {
               {biography}
             </Card.Text>
           </Collapse>
-          <Button variant="light" block className={styles.biographyButton} onClick={() => setBiographyOpen(!biographyOpen)}>
-              <FontAwesomeIcon icon={biographyOpen ? faChevronUp : faChevronDown} color="#60CCCC" />
-            </Button>
+          <Button
+            variant="light"
+            block
+            className={styles.biographyButton}
+            onClick={() => setBiographyOpen(!biographyOpen)}
+          >
+            <FontAwesomeIcon
+              icon={biographyOpen ? faChevronUp : faChevronDown}
+              color="#60CCCC"
+            />
+          </Button>
         </Card.Body>
       </Card>
     </Col>
@@ -37,7 +45,7 @@ FellowCard.propTypes = {
     imageUrl: string.isRequired,
     name: string.isRequired,
     biography: string.isRequired
-  })
+  }).isRequired
 };
 
 export default FellowCard;

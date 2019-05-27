@@ -11,8 +11,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
 import moment from 'moment';
-import { shape, string } from 'prop-types';
-import { postMap } from '../../data/blog';
+import { shape, string, objectOf, number, arrayOf } from 'prop-types';
 import styles from './BlogPage.module.css';
 
 const renderBlogPageHeader = content => (
@@ -24,7 +23,7 @@ const renderBlogPageHeader = content => (
   </React.Fragment>
 );
 
-const BlogPage = ({ match }) => {
+const BlogPage = ({ match, postMap }) => {
   const blog = postMap[match.params.id];
   const { title, publishDate, headerImage, headerImages, body } = blog;
   return (
@@ -172,7 +171,25 @@ BlogPage.propTypes = {
     params: shape({
       id: string.isRequired
     })
-  }).isRequired
+  }).isRequired,
+  postMap: objectOf(
+    shape({
+      id: number.isRequired,
+      title: string.isRequired,
+      type: string.isRequired,
+      publishDate: string.isRequired,
+      summary: string.isRequired,
+      body: arrayOf(
+        shape({
+          type: string.isRequired
+        })
+      )
+    })
+  )
+};
+
+BlogPage.defaultProps = {
+  postMap: {}
 };
 
 export default BlogPage;

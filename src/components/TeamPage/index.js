@@ -7,6 +7,7 @@ import directors from '../../data/team/directors';
 import volunteerLeaders from '../../data/team/volunteer-leaders';
 import advisors from '../../data/team/advisors';
 import sponsors from '../../data/team/sponsors';
+import partners from '../../data/team/partners';
 
 const TeamPage = () => (
   <Container className="page-container">
@@ -70,6 +71,23 @@ const TeamPage = () => (
         {sponsors.map(imageUrl => (
           <Card border="secondary">
             <Card.Img fluid className="p-3" src={imageUrl} />
+          </Card>
+        ))}
+      </CardColumns>
+    </Row>
+    <Row className={styles.teamSection}>
+      <Col>
+        <h2>Our Partners</h2>
+      </Col>
+    </Row>
+    <hr />
+    <Row>
+      <CardColumns>
+        {partners.map(({ imageUrl, ctaUrl }) => (
+          <Card border="secondary">
+            <a href={ctaUrl}>
+              <Card.Img fluid className="p-3" src={imageUrl} />
+            </a>
           </Card>
         ))}
       </CardColumns>

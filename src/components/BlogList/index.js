@@ -17,8 +17,7 @@ import {
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import { shape, string } from 'prop-types';
-import { posts } from '../../data/blog';
+import { shape, string, arrayOf, number, element } from 'prop-types';
 
 const iconMap = {
   text: faFileAlt,
@@ -26,16 +25,16 @@ const iconMap = {
   letter: faEnvelope
 };
 
-const BlogList = ({ match }) => {
-  const pageNum = parseInt(match.params.page, 10) || 1;
+const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
+  const currentPage = parseInt(match.params.page, 10) || 1;
 
   const pages = posts.length;
   const paginationItems = [];
-  for (let number = 1; number <= pages; number += 1) {
+  for (let pageNum = 1; pageNum <= pages; pageNum += 1) {
     paginationItems.push(
-      <LinkContainer exact to={`/blog${number === 1 ? '' : `/${number}`}`}>
-        <Pagination.Item key={number} active={number === pageNum}>
-          {number}
+      <LinkContainer exact to={`/blog${pageNum === 1 ? '' : `/${pageNum}`}`}>
+        <Pagination.Item key={pageNum} active={pageNum === currentPage}>
+          {pageNum}
         </Pagination.Item>
       </LinkContainer>
     );
@@ -43,62 +42,69 @@ const BlogList = ({ match }) => {
 
   return (
     <Container className="page-container">
-      <h1>The Kids First Project Blog</h1>
+      <h1>{pageTitle}</h1>
       <hr />
-      {posts[pageNum - 1].map(
-        ({
-          type,
-          publishDate,
-          headerImage,
-          headerImages,
-          id,
-          title,
-          summary
-        }) => {
-          const thumbnailImage =
-            headerImage || (headerImages ? headerImages[0] : null);
-          return (
-            <React.Fragment>
-              <Row>
-                <Col
-                  md={2}
-                  className="d-flex flex-column align-items-center justify-content-center"
-                >
-                  <FontAwesomeIcon
-                    icon={iconMap[type]}
-                    size="4x"
-                    color="#60CCCC"
-                  />
-                  <p>{moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
-                </Col>
-                {thumbnailImage ? (
+      {pages > 0 ? (
+        posts[currentPage - 1].map(
+          ({
+            type,
+            publishDate,
+            headerImage,
+            headerImages,
+            id,
+            title,
+            summary
+          }) => {
+            const thumbnailImage =
+              headerImage || (headerImages ? headerImages[0] : null);
+            const postUrl = `${postPrefix}/blog/post/${id}`;
+            return (
+              <React.Fragment>
+                <Row>
                   <Col
-                    md={4}
-                    className="d-flex align-items-center justify-content-center"
+                    md={2}
+                    className="d-flex flex-column align-items-center justify-content-center"
                   >
-                    <Link to={`/blog/post/${id}`}>
-                      <Image src={thumbnailImage} fluid rounded />
+                    <FontAwesomeIcon
+                      icon={iconMap[type]}
+                      size="4x"
+                      color="#60CCCC"
+                    />
+                    <p>
+                      {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}
+                    </p>
+                  </Col>
+                  {thumbnailImage ? (
+                    <Col
+                      md={4}
+                      className="d-flex align-items-center justify-content-center"
+                    >
+                      <Link to={postUrl}>
+                        <Image src={thumbnailImage} fluid rounded />
+                      </Link>
+                    </Col>
+                  ) : (
+                    ''
+                  )}
+                  <Col className="d-flex flex-column justify-content-center">
+                    <Link to={postUrl}>
+                      <h3>{title}</h3>
+                    </Link>
+                    <p className="lead">{summary}</p>
+                    <Link to={postUrl}>
+                      <Button variant="primary">
+                        Read More <FontAwesomeIcon icon={faAngleRight} />
+                      </Button>
                     </Link>
                   </Col>
-                ) : (
-                  ''
-                )}
-                <Col className="d-flex flex-column justify-content-center">
-                  <Link to={`/blog/post/${id}`}>
-                    <h3>{title}</h3>
-                  </Link>
-                  <p className="lead">{summary}</p>
-                  <Link to={`/blog/post/${id}`}>
-                    <Button variant="primary">
-                      Read More <FontAwesomeIcon icon={faAngleRight} />
-                    </Button>
-                  </Link>
-                </Col>
-              </Row>
-              <hr />
-            </React.Fragment>
-          );
-        }
+                </Row>
+                <hr />
+              </React.Fragment>
+            );
+          }
+        )
+      ) : (
+        <p>No posts yet!</p>
       )}
       <Row>
         <Col className="d-flex justify-content-center">
@@ -114,7 +120,20 @@ BlogList.propTypes = {
     params: shape({
       page: string
     })
-  })
+  }),
+  pageTitle: string.isRequired,
+  posts: arrayOf(
+    shape({
+      type: string,
+      publishDate: string,
+      headerImage: element,
+      headerImages: arrayOf(element),
+      id: number,
+      title: string,
+      summary: string
+    })
+  ).isRequired,
+  postPrefix: string
 };
 
 BlogList.defaultProps = {
@@ -122,7 +141,8 @@ BlogList.defaultProps = {
     params: shape({
       page: '1'
     })
-  })
+  }),
+  postPrefix: ''
 };
 
 export default BlogList;
