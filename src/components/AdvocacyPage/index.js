@@ -29,31 +29,29 @@ const AdvocacyPage = () => (
       </Col>
       <Col>
         <h2>Summer Advocacy Blog</h2>
-        {recentPosts.map(({postUrl, title, publishDate, type}) => (
+        {recentPosts.map(({ postUrl, title, publishDate, type }) => (
           <Media>
-            <FontAwesomeIcon
-              icon={iconMap[type]}
-              size="4x"
-              color="#60CCCC"
-            />
+            <FontAwesomeIcon icon={iconMap[type]} size="4x" color="#60CCCC" />
             <Media.Body>
               <Container>
                 <Link to={postUrl}>
                   <h5>{title}</h5>
                 </Link>
-                <p>
-                  {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}
-                </p>
+                <p>{moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
               </Container>
             </Media.Body>
           </Media>
         ))}
-        <LinkContainer exact to="/advocacy/blog" className="d-flex justify-content-center">
+        <LinkContainer
+          exact
+          to="/advocacy/blog"
+          className="d-flex justify-content-center"
+        >
           <Button variant="primary">Read More</Button>
         </LinkContainer>
       </Col>
     </Row>
-    <br/>
+    <br />
     <Row>
       <Col>
         <h2>2019 Fellows</h2>
