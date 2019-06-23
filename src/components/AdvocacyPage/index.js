@@ -1,15 +1,20 @@
 import React from 'react';
-import { Container, Col, Row, Button } from 'react-bootstrap';
+import { Container, Col, Row, Button, Media } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
+import moment from 'moment';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FellowCard from './FellowCard';
 import fellows2019 from '../../data/advocacy/2019';
+import { recentPosts } from '../../data/advocacy/blog';
+import iconMap from '../BlogList/iconMap';
 
 const AdvocacyPage = () => (
   <Container className="page-container">
     <h1>Summer Advocacy Fellowship</h1>
     <hr />
     <Row>
-      <Col>
+      <Col lg={8}>
         <p>
           The Kids First Project Summer Advocacy Fellowship provides current and
           former youth experiencing homelessness with a platform to share their
@@ -22,24 +27,43 @@ const AdvocacyPage = () => (
           action.
         </p>
       </Col>
+      <Col>
+        <h2>Summer Advocacy Blog</h2>
+        {recentPosts.map(({postUrl, title, publishDate, type}) => (
+          <Media>
+            <FontAwesomeIcon
+              icon={iconMap[type]}
+              size="4x"
+              color="#60CCCC"
+            />
+            <Media.Body>
+              <Container>
+                <Link to={postUrl}>
+                  <h5>{title}</h5>
+                </Link>
+                <p>
+                  {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}
+                </p>
+              </Container>
+            </Media.Body>
+          </Media>
+        ))}
+        <LinkContainer exact to="/advocacy/blog" className="d-flex justify-content-center">
+          <Button variant="primary">Read More</Button>
+        </LinkContainer>
+      </Col>
     </Row>
+    <br/>
     <Row>
-      <h2>2019 Fellows</h2>
+      <Col>
+        <h2>2019 Fellows</h2>
+      </Col>
     </Row>
     <hr />
     <Row>
       {fellows2019.map(fellow => (
         <FellowCard fellow={fellow} />
       ))}
-    </Row>
-    <Row>
-      <h2>Summer Advocacy Blog</h2>
-    </Row>
-    <hr />
-    <Row>
-      <LinkContainer exact to="/advocacy/blog">
-        <Button variant="primary">Read Posts</Button>
-      </LinkContainer>
     </Row>
   </Container>
 );

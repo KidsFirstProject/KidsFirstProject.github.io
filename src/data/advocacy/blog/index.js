@@ -18,3 +18,5 @@ export const postMap = {};
 allPosts.forEach(post => {
   postMap[post.id] = post;
 });
+
+export const recentPosts = _.take(allPosts, 5);
