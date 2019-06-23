@@ -9,21 +9,13 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFileAlt,
   faAngleRight,
-  faComments,
-  faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { shape, string, arrayOf, number, element } from 'prop-types';
-
-const iconMap = {
-  text: faFileAlt,
-  interview: faComments,
-  letter: faEnvelope
-};
+import iconMap from './iconMap';
 
 const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
   const currentPage = parseInt(match.params.page, 10) || 1;
