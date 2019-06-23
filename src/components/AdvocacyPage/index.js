@@ -29,12 +29,12 @@ const AdvocacyPage = () => (
       </Col>
       <Col>
         <h2>Summer Advocacy Blog</h2>
-        {recentPosts.map(({ postUrl, title, publishDate, type }) => (
+        {recentPosts.map(({ title, publishDate, type, id }) => (
           <Media>
             <FontAwesomeIcon icon={iconMap[type]} size="4x" color="#60CCCC" />
             <Media.Body>
               <Container>
-                <Link to={postUrl}>
+                <Link to={`advocacy/blog/post/${id}`}>
                   <h5>{title}</h5>
                 </Link>
                 <p>{moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
