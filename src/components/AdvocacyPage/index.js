@@ -8,6 +8,7 @@ import FellowCard from './FellowCard';
 import fellows2019 from '../../data/advocacy/2019';
 import { recentPosts } from '../../data/advocacy/blog';
 import iconMap from '../BlogList/iconMap';
+import Gallery from './Gallery';
 
 const AdvocacyPage = () => (
   <Container className="page-container">
@@ -62,6 +63,16 @@ const AdvocacyPage = () => (
       {fellows2019.map(fellow => (
         <FellowCard fellow={fellow} />
       ))}
+    </Row>
+    <br />
+    <Row>
+      <Col>
+        <h2>Gallery</h2>
+      </Col>
+    </Row>
+    <hr />
+    <Row>
+      <Gallery />
     </Row>
   </Container>
 );
