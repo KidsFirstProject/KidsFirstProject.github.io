@@ -19,13 +19,15 @@ const AdvocacyPage = () => (
         <p>
           The Kids First Project Summer Advocacy Fellowship provides current and
           former youth experiencing homelessness with a platform to share their
-          stories and be heard. They will participate in a two-day workshop in
-          Portland, OR, learning about their rights and how to engage in
-          effective advocacy from guest speakers, and then researching and
-          crafting pitches and one-pagers. The fellowship will culminate in a
-          four-day trip to Washington, D.C., where the fellows will meet with
-          their legislators on Capitol Hill, sharing their stories and calls to
-          action.
+          stories and be heard. Our five 2019 fellows participated in a two-day
+          workshop in Portland, OR, learning about policies regarding
+          homelessness and how to engage in effective advocacy from guest
+          speakers, and then crafting their own pitches and one-pagers. The
+          fellowship culminated in a trip to Washington, D.C., where the fellows
+          met with Senator Merkley and Wyden on Capitol Hill as well as the
+          National Law Center on Homelessness & Poverty, sharing their stories
+          and calls to action. Back home, our fellows have continued their
+          advocacy both in Portland and Salem.
         </p>
       </Col>
       <Col>

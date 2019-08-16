@@ -22,7 +22,10 @@ const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
   const paginationItems = [];
   for (let pageNum = 1; pageNum <= pages; pageNum += 1) {
     paginationItems.push(
-      <LinkContainer exact to={`${postPrefix}/blog${pageNum === 1 ? '' : `/${pageNum}`}`}>
+      <LinkContainer
+        exact
+        to={`${postPrefix}/blog${pageNum === 1 ? '' : `/${pageNum}`}`}
+      >
         <Pagination.Item key={pageNum} active={pageNum === currentPage}>
           {pageNum}
         </Pagination.Item>
