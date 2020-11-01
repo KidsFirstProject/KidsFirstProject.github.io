@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kids First Project Website
 
-## Available Scripts
+This is the website for the Kids First Project non-profit organization
 
-In the project directory, you can run:
+## Contributing
 
-### `npm start`
+Pull requests are welcomed, and must be reviewed by the owner before being merged.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Tech Stack
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+#### Frameworks
 
-### `npm test`
+* React (Create React App)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Component Library
 
-### `npm run build`
+* React Bootstrap
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Getting Started
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Install the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+Run the dev build locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Code Quality
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+```bash
+npm run lint:fix
+npm run pretty
+```
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+```bash
+npm deploy
+```
 
-### `npm run build` fails to minify
+## Design Decisions
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Bootstrap
+
+I originally wrote this website in college, when I was first starting out with learning about web technologies. The original site was my first project using purely HTML, CSS and the Bootstrap CSS framework. At the time I picked Bootstrap since it was beginner friendly and appealed to my aesthetic. Since then in order to maintain the same look and feel of the site, I've continued using Bootstrap as the sole component library.
+
+### React
+
+I have more experience with React than other frameworks like Vue or Angular. I wanted to move away from the old HTML/CSS files to something else before a fairly large feature request, so I decided to stick with a framework I had experience with instead of learning something new.
+
+### Redesign
+
+The original setup for the website was extremely barebones and fairly poorly written due to it being my first foray into web. Each page had its own file that included everything (head, body, navbar, etc) which made it an absolute nightmare to update. Each year I'd have to update 50+ files to switch the copyright date at the bottom since I didn't have any Javascript outside of what Bootstrap used. Each time I updated the navbar, I'd have to change 50+ pages. And each blog post required me to shift posts through each page (since each page was a separate file).
+
+Updates were fairly infrequent though, so I put up with it for a while, but eventually I got asked to make a fairly large update to the site (adding multiple sections), and I decided to sit down and rewrite everything to simplify as much as I could.
+
+### Content Storage
+
+I looked through a lot of CMS options so that I could simplify how I query for content, move the responsbility of creating content entries away from myself, and to remove the need for deployments. There's a lot of solid options out there, however given the current rate of updates and my budget of approximately nothing, I figured the best option would be to just create something myself.
+
+As a result I'm storing all the entries in the code itself. I tried to keep it as similar to a headless CMS setup as possible, so that in the future I can easily swap if needed.
