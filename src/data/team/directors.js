@@ -51,6 +51,12 @@ const directors = [
       'Tara is currently a sophomore at Lincoln High School, where Kids First Project was started. Tara has worked with several organizations with a focus on health and social education in children. She has worked with the Sierra Project Foundation that is involved in health education in youth and Stumptown Speaker Series, an organization that interviews entrepreneurs to help high schoolers find their careers. In her free time, Tara loves playing tennis and competing on Lincoln’s speech and debate team. She is excited to work with Kids First Project to support youth experiencing homelessness and see positive change in her community.'
   },
   {
+    imageUrl: images['Tyra.jpg'],
+    name: 'Tyra',
+    titles: ['Community Outreach Director'],
+    description: ''
+  },
+  {
     imageUrl: images['Zhao-Alisha.jpg'],
     name: 'Alisha Zhao',
     titles: ['Advisor'],
