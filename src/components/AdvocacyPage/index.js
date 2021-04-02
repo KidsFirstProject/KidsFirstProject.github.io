@@ -11,7 +11,7 @@ import { recentPosts } from '../../data/advocacy/blog';
 import iconMap from '../BlogList/iconMap';
 import Gallery from './Gallery';
 
-dayjs.extend(advancedFormat)
+dayjs.extend(advancedFormat);
 
 const AdvocacyPage = () => (
   <Container className="page-container">

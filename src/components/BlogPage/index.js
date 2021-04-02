@@ -15,7 +15,7 @@ import advancedFormat from 'dayjs/plugin/advancedFormat';
 import { shape, string, objectOf, number, arrayOf } from 'prop-types';
 import styles from './BlogPage.module.css';
 
-dayjs.extend(advancedFormat)
+dayjs.extend(advancedFormat);
 
 const renderBlogPageHeader = content => (
   <React.Fragment>

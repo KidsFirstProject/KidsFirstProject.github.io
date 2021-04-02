@@ -27,7 +27,8 @@ const directors = [
     imageUrl: images['Baylee.jpg'],
     name: 'Baylee',
     titles: ['Co-Advocacy Director'],
-    description: 'My name is Baylee, and I was a part of the Kids First Project fellowship in 2019. I’ve had a heart for advocacy from a young age. My goal while working with Kids First is to help others in their journey through advocacy, and to help cultivate change in the houseless community.'
+    description:
+      'My name is Baylee, and I was a part of the Kids First Project fellowship in 2019. I’ve had a heart for advocacy from a young age. My goal while working with Kids First is to help others in their journey through advocacy, and to help cultivate change in the houseless community.'
   },
   {
     imageUrl: images['Williams-Lois.jpg'],
@@ -41,7 +42,7 @@ const directors = [
     name: 'Rhiannon',
     titles: ['Director of Finance and Administration'],
     description:
-      'Rhiannon is currently a sophomore at Stanford University. She is passionate about the intersection of law and business, with an emphasis on human rights. Over the years, she’s volunteered for a public law center\'s immigration unit, a children\'s special needs camp, and an organization focused on empowering veterans with PTSD. Through community education and increasing homeless youths\' accessibility to resources, she believes Kids First Project has the ability to create meaningful change.'
+      "Rhiannon is currently a sophomore at Stanford University. She is passionate about the intersection of law and business, with an emphasis on human rights. Over the years, she’s volunteered for a public law center's immigration unit, a children's special needs camp, and an organization focused on empowering veterans with PTSD. Through community education and increasing homeless youths' accessibility to resources, she believes Kids First Project has the ability to create meaningful change."
   },
   {
     imageUrl: images['Tara.png'],

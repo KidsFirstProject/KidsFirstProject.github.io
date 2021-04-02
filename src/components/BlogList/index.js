@@ -16,7 +16,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { shape, string, arrayOf, number, element } from 'prop-types';
 import iconMap from './iconMap';
 
-dayjs.extend(advancedFormat)
+dayjs.extend(advancedFormat);
 
 const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
   const currentPage = parseInt(match.params.page, 10) || 1;
@@ -66,9 +66,7 @@ const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
                       size="4x"
                       color="#60CCCC"
                     />
-                    <p>
-                      {dayjs(publishDate).format('MMM Do YYYY')}
-                    </p>
+                    <p>{dayjs(publishDate).format('MMM Do YYYY')}</p>
                   </Col>
                   {thumbnailImage ? (
                     <Col
