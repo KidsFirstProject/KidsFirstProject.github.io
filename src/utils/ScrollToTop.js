@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { withRouter } from 'react-router';
-import { element, shape, string } from 'prop-types';
+import { arrayOf, element, shape, string } from 'prop-types';
 
 class ScrollToTop extends Component {
   componentDidUpdate({ location: prevLocation }) {
@@ -20,7 +20,7 @@ ScrollToTop.propTypes = {
   location: shape({
     pathname: string.isRequired
   }).isRequired,
-  children: element.isRequired
+  children: arrayOf(element).isRequired
 };
 
 export default withRouter(ScrollToTop);

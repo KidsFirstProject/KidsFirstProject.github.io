@@ -28,15 +28,15 @@ const VolunteerPage = () => (
           </Card.Header>
           <Card.Body>
             <Card.Text className="text-center">
-              <p>Sign up for a shift here!</p>
-              <a
-                href="http://www.signupgenius.com/go/30e0c4faeaf2fa5f94-kids"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src="http://www.SignUpGenius.com/images/SignUpGenius-wide.gif" />
-              </a>
+              Sign up for a shift here!
             </Card.Text>
+            <a
+              href="http://www.signupgenius.com/go/30e0c4faeaf2fa5f94-kids"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="http://www.SignUpGenius.com/images/SignUpGenius-wide.gif" />
+            </a>
           </Card.Body>
         </Card>
       </Col>
@@ -64,25 +64,19 @@ const VolunteerPage = () => (
             <h3 className="text-center">How to volunteer</h3>
           </Card.Header>
           <Card.Body>
-            <Card.Text>
-              <div>
-                <p>To become a volunteer you must:</p>
-                <ul>
-                  <li>Fill out and submit the online application form</li>
-                  <li>
-                    Attend an in-person orientation at your local shelter(s)
-                  </li>
-                  <li>
-                    Complete a short online orientation about our organization
-                    (Attending in person orientation at shelter is highly
-                    recommended)
-                  </li>
-                </ul>
-              </div>
-              <Button href="https://docs.google.com/forms/d/120QCcvp0nclc3Is8XMjf9XR7Mk5VwYx_I9CWe7YqaSU/viewform">
-                <FontAwesomeIcon icon={faPen} color="white" /> Apply Now
-              </Button>
-            </Card.Text>
+            <Card.Text>To become a volunteer you must:</Card.Text>
+            <ul>
+              <li>Fill out and submit the online application form</li>
+              <li>Attend an in-person orientation at your local shelter(s)</li>
+              <li>
+                Complete a short online orientation about our organization
+                (Attending in person orientation at shelter is highly
+                recommended)
+              </li>
+            </ul>
+            <Button href="https://docs.google.com/forms/d/120QCcvp0nclc3Is8XMjf9XR7Mk5VwYx_I9CWe7YqaSU/viewform">
+              <FontAwesomeIcon icon={faPen} color="white" /> Apply Now
+            </Button>
           </Card.Body>
         </Card>
       </Col>
@@ -95,7 +89,7 @@ const VolunteerPage = () => (
           <iframe
             title="New Volunteer Orientation Powerpoint"
             src="https://docs.google.com/presentation/d/1vyZS36uuGONWKj2Z1RYETjuxyH_0gwyFmz3rAxh7ZLE/embed?start=false&amp;loop=true&amp;delayms=10000"
-            allowFullScreen="true"
+            allowFullScreen
             mozallowfullscreen="true"
             webkitallowfullscreen="true"
           />

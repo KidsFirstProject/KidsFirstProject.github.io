@@ -35,7 +35,7 @@ const TeamPage = () => (
     <hr />
     <Row>
       {directors.map(director => (
-        <MemberCard member={director} />
+        <MemberCard member={director} key={`member-card-${director.name}`} />
       ))}
     </Row>
     <Row className={styles.teamSection}>
@@ -46,7 +46,7 @@ const TeamPage = () => (
     <hr />
     <Row>
       {volunteerLeaders.map(leader => (
-        <MemberCard member={leader} />
+        <MemberCard member={leader} key={`member-card-${leader.name}`} />
       ))}
     </Row>
     <Row className={styles.teamSection}>
@@ -57,7 +57,7 @@ const TeamPage = () => (
     <hr />
     <Row>
       {advisors.map(advisor => (
-        <MemberCard member={advisor} />
+        <MemberCard member={advisor} key={`member-card-${advisor.name}`} />
       ))}
     </Row>
     <Row className={styles.teamSection}>
@@ -68,9 +68,9 @@ const TeamPage = () => (
     <hr />
     <Row>
       <CardColumns>
-        {sponsors.map(imageUrl => (
-          <Card border="secondary">
-            <Card.Img fluid className="p-3" src={imageUrl} />
+        {sponsors.map((imageUrl, index) => (
+          <Card border="secondary" key={`sponsor-card-${index}`}>
+            <Card.Img className="p-3" src={imageUrl} />
           </Card>
         ))}
       </CardColumns>
@@ -83,10 +83,10 @@ const TeamPage = () => (
     <hr />
     <Row>
       <CardColumns>
-        {partners.map(({ imageUrl, ctaUrl }) => (
-          <Card border="secondary">
+        {partners.map(({ imageUrl, ctaUrl }, index) => (
+          <Card border="secondary" key={`partner-card-${index}`}>
             <a href={ctaUrl}>
-              <Card.Img fluid className="p-3" src={imageUrl} />
+              <Card.Img className="p-3" src={imageUrl} />
             </a>
           </Card>
         ))}

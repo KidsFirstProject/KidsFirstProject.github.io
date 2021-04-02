@@ -16,6 +16,11 @@ Pull requests are welcomed, and must be reviewed by the owner before being merge
 
 * React Bootstrap
 
+### Required
+
+`node` - `14.16.0+`
+`npm` - `6.14.11` (NPM 7+ has issues installing babel from CRA, so we're forced to use this version)
+
 ### Getting Started
 
 Install the project

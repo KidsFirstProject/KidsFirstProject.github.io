@@ -13,9 +13,7 @@ const iconColor = '#60CCCC';
 const SocialMedia = () => (
   <Row>
     <Col
-      className={`d-flex flex-row justify-content-center ${
-        styles.mediaContainer
-      }`}
+      className={`d-flex flex-row justify-content-center ${styles.mediaContainer}`}
     >
       <div className="p-4">
         <a href="https://www.facebook.com/kidsfirstproject">

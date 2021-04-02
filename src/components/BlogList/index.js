@@ -13,7 +13,7 @@ import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
-import { shape, string, arrayOf, number, element } from 'prop-types';
+import { shape, string, arrayOf, number } from 'prop-types';
 import iconMap from './iconMap';
 
 dayjs.extend(advancedFormat);
@@ -28,6 +28,7 @@ const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
       <LinkContainer
         exact
         to={`${postPrefix}/blog${pageNum === 1 ? '' : `/${pageNum}`}`}
+        key={`page-${pageNum}`}
       >
         <Pagination.Item key={pageNum} active={pageNum === currentPage}>
           {pageNum}
@@ -55,7 +56,7 @@ const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
               headerImage || (headerImages ? headerImages[0] : null);
             const postUrl = `${postPrefix}/blog/post/${id}`;
             return (
-              <React.Fragment>
+              <React.Fragment key={`post-${id}`}>
                 <Row>
                   <Col
                     md={2}
@@ -117,15 +118,17 @@ BlogList.propTypes = {
   }),
   pageTitle: string.isRequired,
   posts: arrayOf(
-    shape({
-      type: string,
-      publishDate: string,
-      headerImage: element,
-      headerImages: arrayOf(element),
-      id: number,
-      title: string,
-      summary: string
-    })
+    arrayOf(
+      shape({
+        type: string,
+        publishDate: string,
+        headerImage: string,
+        headerImages: arrayOf(string),
+        id: number,
+        title: string,
+        summary: string
+      })
+    )
   ).isRequired,
   postPrefix: string
 };

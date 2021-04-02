@@ -5,8 +5,8 @@ import images from '../../data/advocacy/gallery/advocacyImages';
 const Gallery = () => {
   return (
     <CardColumns>
-      {images.map(imageUrl => (
-        <Card>
+      {images.map((imageUrl, index) => (
+        <Card key={`image-${index}`}>
           <Card.Img src={imageUrl} />
         </Card>
       ))}

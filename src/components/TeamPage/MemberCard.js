@@ -16,8 +16,11 @@ const MemberCard = ({ member }) => {
           <Image fluid src={imageUrl} className={styles.memberImage} />
           <Card.Title>{name}</Card.Title>
           {titles
-            ? titles.map(title => (
-                <Card.Subtitle className={styles.memberTitle}>
+            ? titles.map((title, index) => (
+                <Card.Subtitle
+                  className={styles.memberTitle}
+                  key={`member-title-${index}`}
+                >
                   {title}
                 </Card.Subtitle>
               ))

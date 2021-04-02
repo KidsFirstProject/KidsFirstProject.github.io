@@ -9,7 +9,6 @@ const { Brand, Toggle, Collapse } = Navbar;
 
 const KFPNavbar = () => (
   <Navbar
-    fluid
     expand="lg"
     collapseOnSelect
     sticky="top"
@@ -17,7 +16,7 @@ const KFPNavbar = () => (
     variant="dark"
   >
     <Container>
-      <Brand href="#home">
+      <Brand>
         <Link to="/">
           <img
             className="navbar-logo"

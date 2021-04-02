@@ -6,12 +6,10 @@ import aboutImage from '../../assets/images/shelter/shelter010.jpg';
 import volunteerImage from '../../assets/images/shelter/shelter018.jpg';
 
 const Header = () => (
-  <Carousel pauseOnHover={false}>
+  <Carousel pause="hover">
     <Carousel.Item>
       <div
-        className={`${
-          styles.carouselItem
-        } d-flex flex-column justify-content-center`}
+        className={`${styles.carouselItem} d-flex flex-column justify-content-center`}
       >
         <img
           className={`d-block w-100 ${styles.carouselImage}`}
@@ -29,9 +27,7 @@ const Header = () => (
     </Carousel.Item>
     <Carousel.Item>
       <div
-        className={`${
-          styles.carouselItem
-        } d-flex flex-column justify-content-center`}
+        className={`${styles.carouselItem} d-flex flex-column justify-content-center`}
       >
         <img
           className={`d-block w-100 ${styles.carouselImage}`}

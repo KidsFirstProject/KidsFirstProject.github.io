@@ -36,7 +36,7 @@ const AdvocacyPage = () => (
       <Col>
         <h2>Summer Advocacy Blog</h2>
         {recentPosts.map(({ title, publishDate, type, id }) => (
-          <Media>
+          <Media key={`media-object-${id}`}>
             <FontAwesomeIcon icon={iconMap[type]} size="4x" color="#60CCCC" />
             <Media.Body>
               <Container>
@@ -65,8 +65,8 @@ const AdvocacyPage = () => (
     </Row>
     <hr />
     <Row>
-      {fellows2019.map(fellow => (
-        <FellowCard fellow={fellow} />
+      {fellows2019.map((fellow, index) => (
+        <FellowCard fellow={fellow} key={`fellow-${index}`} />
       ))}
     </Row>
     <br />

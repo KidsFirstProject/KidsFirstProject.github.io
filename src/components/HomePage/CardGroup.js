@@ -35,8 +35,8 @@ const cards = [
 
 const CardGroup = () => (
   <Row className={styles.groupContainer}>
-    {cards.map(({ imageUrl, title, text, ctaLink, ctaText }) => (
-      <Col lg>
+    {cards.map(({ imageUrl, title, text, ctaLink, ctaText }, index) => (
+      <Col lg key={`card-${index}`}>
         <Card style={{ border: 'none' }}>
           <Card.Img variant="top" src={imageUrl} />
           <Card.Body>

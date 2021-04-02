@@ -18,9 +18,7 @@ const ChaptersPage = () => (
           {carouselImages.map((image, index) => (
             <Carousel.Item key={`slide_${index}`}>
               <div
-                className={`${
-                  styles.carouselItem
-                } d-flex flex-column justify-content-center`}
+                className={`${styles.carouselItem} d-flex flex-column justify-content-center`}
               >
                 <img
                   className={`d-block w-100 ${styles.carouselImage}`}
