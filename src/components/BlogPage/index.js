@@ -10,9 +10,12 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-regular-svg-icons';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import advancedFormat from 'dayjs/plugin/advancedFormat';
 import { shape, string, objectOf, number, arrayOf } from 'prop-types';
 import styles from './BlogPage.module.css';
+
+dayjs.extend(advancedFormat)
 
 const renderBlogPageHeader = content => (
   <React.Fragment>
@@ -32,7 +35,7 @@ const BlogPage = ({ match, postMap }) => {
       <hr className={styles.sectionDivider} />
       <p>
         <FontAwesomeIcon icon={faClock} /> Posted on{' '}
-        {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}
+        {dayjs(publishDate).format('MMM Do YYYY')}
       </p>
       <hr className={styles.sectionDivider} />
       {headerImage

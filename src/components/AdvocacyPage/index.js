@@ -2,13 +2,16 @@ import React from 'react';
 import { Container, Col, Row, Button, Media } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import advancedFormat from 'dayjs/plugin/advancedFormat';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FellowCard from './FellowCard';
 import fellows2019 from '../../data/advocacy/2019';
 import { recentPosts } from '../../data/advocacy/blog';
 import iconMap from '../BlogList/iconMap';
 import Gallery from './Gallery';
+
+dayjs.extend(advancedFormat)
 
 const AdvocacyPage = () => (
   <Container className="page-container">
@@ -40,7 +43,7 @@ const AdvocacyPage = () => (
                 <Link to={`advocacy/blog/post/${id}`}>
                   <h5>{title}</h5>
                 </Link>
-                <p>{moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}</p>
+                <p>{dayjs(publishDate).format('MMM Do YYYY')}</p>
               </Container>
             </Media.Body>
           </Media>

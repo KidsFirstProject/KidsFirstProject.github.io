@@ -9,11 +9,14 @@ import {
 } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import moment from 'moment';
+import dayjs from 'dayjs';
+import advancedFormat from 'dayjs/plugin/advancedFormat';
 import { Link } from 'react-router-dom';
 import { LinkContainer } from 'react-router-bootstrap';
 import { shape, string, arrayOf, number, element } from 'prop-types';
 import iconMap from './iconMap';
+
+dayjs.extend(advancedFormat)
 
 const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
   const currentPage = parseInt(match.params.page, 10) || 1;
@@ -64,7 +67,7 @@ const BlogList = ({ match, pageTitle, posts, postPrefix }) => {
                       color="#60CCCC"
                     />
                     <p>
-                      {moment(publishDate, 'YYYY-MM-DD').format('MMM Do Y')}
+                      {dayjs(publishDate).format('MMM Do YYYY')}
                     </p>
                   </Col>
                   {thumbnailImage ? (
