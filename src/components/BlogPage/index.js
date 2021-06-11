@@ -165,6 +165,8 @@ const BlogPage = ({ match, postMap }) => {
                     <iframe title={section.title} src={section.file} />
                   </ResponsiveEmbed>
                 );
+              case 'link':
+                return <a href={section.src}>{section.text}</a>;
               default:
                 return '';
             }

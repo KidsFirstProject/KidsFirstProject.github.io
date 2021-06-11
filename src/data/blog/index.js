@@ -19,10 +19,12 @@ import Blog20171006 from './2017-10-06';
 import Blog20171007 from './2017-10-07';
 import Blog20180514 from './2018-05-14';
 import Blog20180518 from './2018-05-18';
+import Blog20210611 from './2021-06-11';
 
 // Imagine if we had a CMS
 
 const allPosts = [
+  Blog20210611,
   Blog20180518,
   Blog20180514,
   Blog20171007,
